@@ -1,0 +1,59 @@
+version: "3.7"
+
+services:
+  web:
+    build:
+      args:
+        user: dev1
+        uid: ${USER_ID}
+      context:
+        docker/web
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    working_dir: /var/www/
+    volumes:
+      - ./web/:/var/www
+    networks:
+      - vay
+
+  composer:
+    image: composer:2.0.4
+    volumes:
+      - ./web/.:/app
+    command: echo true
+    networks:
+      - vay
+
+  db:
+    image: mysql:8.0
+    ports:
+      - ${DB_EXPOSE_PORT}:3306
+    environment:
+      - MYSQL_DATABASE=${DB_DATABASE}
+      - MYSQL_USER=${DB_USERNAME}
+      - MYSQL_PASSWORD=${DB_PASSWORD}
+      - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
+      - TZ=${TIMEZONE}
+    volumes:
+      - mysql:/var/lib/mysql
+    networks:
+      - vay
+
+  nginx:
+    image: nginx:1.19.1-alpine
+    restart: unless-stopped
+    ports:
+      - ${WEB_PORT}:80
+    volumes:
+      - ./web/:/var/www
+      - ./docker/nginx:/etc/nginx/conf.d
+    networks:
+      - vay
+
+volumes:
+  mysql:
+    driver: local
+
+networks:
+  vay:
+    driver: bridge
