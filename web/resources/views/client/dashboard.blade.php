@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lit</title>
-    <link rel="preload" href="{{ asset('css/app.css') }}" as="style">
+    <base href="{{ asset('') }}">
+    <link rel="preload" href="fonts/fa-regular-400.woff2" as="font">
+    <link rel="preload" href="fonts/fa-brands-400.woff2" as="font">
+    <link rel="preload" href="fonts/fa-solid-900.woff2" as="font">
+    <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
 <!-- top info -->
