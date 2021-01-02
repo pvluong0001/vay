@@ -1,5 +1,6 @@
 // import Swiper JS
 import Swiper, {Pagination} from 'swiper';
+import LazyLoad from "vanilla-lazyload";
 require('./modal');
 
 Swiper.use([Pagination]);
@@ -25,3 +26,5 @@ new Swiper('.knowledge-slide', {
         el: '.swiper-pagination',
     },
 });
+
+new LazyLoad();

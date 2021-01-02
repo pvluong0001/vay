@@ -37,7 +37,7 @@
 <div class="menu shadow-md">
     <div class="container flex py-3 items-center">
         <div class="logo">
-            <img src="assets/logo.png" alt="">
+            <img class="lazy" data-src="assets/logo.png" alt="">
         </div>
         <div class="px-4">
             <ul class="flex gap-4 font-bold">
@@ -63,13 +63,13 @@
 <div class="swiper-container">
     <div class="swiper-wrapper">
         <div class="swiper-slide">
-            <img src="assets/banner.jpg" alt="">
+            <img class="lazy" data-src="assets/banner.jpg" alt="">
         </div>
         <div class="swiper-slide">
-            <img src="assets/banner.jpg" alt="">
+            <img class="lazy" data-src="assets/banner.jpg" alt="">
         </div>
         <div class="swiper-slide">
-            <img src="assets/banner.jpg" alt="">
+            <img class="lazy" data-src="assets/banner.jpg" alt="">
         </div>
     </div>
 </div>
@@ -87,27 +87,27 @@
         </div>
         <div class="services flex mt-10">
             <div class="flex-1 flex flex-col items-center p-4 hover:bg-white border-b-2 cursor-pointer hover:border-b-2 hover:border-blue-700 pb-6">
-                <img src="assets/service.png" style="width: 60px;" alt="">
+                <img class="lazy" data-src="assets/service.png" style="width: 60px;" alt="">
                 <span class="mt-2 text-xl font-bold">Vay nhanh</span>
             </div>
             <div class="flex-1 flex flex-col items-center p-4 hover:bg-white border-b-2 cursor-pointer hover:border-b-2 hover:border-blue-700 pb-6">
-                <img src="assets/service.png" style="width: 60px;" alt="">
+                <img class="lazy" data-src="assets/service.png" style="width: 60px;" alt="">
                 <span class="mt-2 text-xl font-bold">Vay nhanh</span>
             </div>
             <div class="flex-1 flex flex-col items-center p-4 hover:bg-white border-b-2 cursor-pointer hover:border-b-2 hover:border-blue-700 pb-6">
-                <img src="assets/service.png" style="width: 60px;" alt="">
+                <img class="lazy" data-src="assets/service.png" style="width: 60px;" alt="">
                 <span class="mt-2 text-xl font-bold">Vay nhanh</span>
             </div>
             <div class="flex-1 flex flex-col items-center p-4 hover:bg-white border-b-2 cursor-pointer hover:border-b-2 hover:border-blue-700 pb-6">
-                <img src="assets/service.png" style="width: 60px;" alt="">
+                <img class="lazy" data-src="assets/service.png" style="width: 60px;" alt="">
                 <span class="mt-2 text-xl font-bold">Vay nhanh</span>
             </div>
             <div class="flex-1 flex flex-col items-center p-4 hover:bg-white border-b-2 cursor-pointer hover:border-b-2 hover:border-blue-700 pb-6">
-                <img src="assets/service.png" style="width: 60px;" alt="">
+                <img class="lazy" data-src="assets/service.png" style="width: 60px;" alt="">
                 <span class="mt-2 text-xl font-bold">Vay nhanh</span>
             </div>
             <div class="flex-1 flex flex-col items-center p-4 hover:bg-white border-b-2 cursor-pointer hover:border-b-2 hover:border-blue-700 pb-6">
-                <img src="assets/service.png" style="width: 60px;" alt="">
+                <img class="lazy" data-src="assets/service.png" style="width: 60px;" alt="">
                 <span class="mt-2 text-xl font-bold">Vay nhanh</span>
             </div>
         </div>
@@ -257,10 +257,10 @@
                         <span class="triangle-right"></span></div>
                 </div>
                 <div style="width: 137px;" class="mt-6">
-                    <img src="assets/tamo.png" alt="">
+                    <img class="lazy" data-src="assets/tamo.png" alt="">
                 </div>
                 <div class="absolute top-0 right-0 w-12">
-                    <img src="assets/new.png" alt="">
+                    <img class="lazy" data-src="assets/new.png" alt="">
                 </div>
                 <div class="font-semibold mt-3">
                     Tamo - Vay tiền nhanh chóng
@@ -304,10 +304,10 @@
                         <span class="triangle-right"></span></div>
                 </div>
                 <div style="width: 137px;" class="mt-6">
-                    <img src="assets/tamo.png" alt="">
+                    <img class="lazy" data-src="assets/tamo.png" alt="">
                 </div>
                 <div class="absolute top-0 right-0 w-12">
-                    <img src="assets/new.png" alt="">
+                    <img class="lazy" data-src="assets/new.png" alt="">
                 </div>
                 <div class="font-semibold mt-3">
                     Tamo - Vay tiền nhanh chóng
@@ -351,10 +351,10 @@
                         <span class="triangle-right"></span></div>
                 </div>
                 <div style="width: 137px;" class="mt-6">
-                    <img src="assets/tamo.png" alt="">
+                    <img class="lazy" data-src="assets/tamo.png" alt="">
                 </div>
                 <div class="absolute top-0 right-0 w-12">
-                    <img src="assets/new.png" alt="">
+                    <img class="lazy" data-src="assets/new.png" alt="">
                 </div>
                 <div class="font-semibold mt-3">
                     Tamo - Vay tiền nhanh chóng
@@ -398,10 +398,10 @@
                         <span class="triangle-right"></span></div>
                 </div>
                 <div style="width: 137px;" class="mt-6">
-                    <img src="assets/tamo.png" alt="">
+                    <img class="lazy" data-src="assets/tamo.png" alt="">
                 </div>
                 <div class="absolute top-0 right-0 w-12">
-                    <img src="assets/new.png" alt="">
+                    <img class="lazy" data-src="assets/new.png" alt="">
                 </div>
                 <div class="font-semibold mt-3">
                     Tamo - Vay tiền nhanh chóng
@@ -445,10 +445,10 @@
                         <span class="triangle-right"></span></div>
                 </div>
                 <div style="width: 137px;" class="mt-6">
-                    <img src="assets/tamo.png" alt="">
+                    <img class="lazy" data-src="assets/tamo.png" alt="">
                 </div>
                 <div class="absolute top-0 right-0 w-12">
-                    <img src="assets/new.png" alt="">
+                    <img class="lazy" data-src="assets/new.png" alt="">
                 </div>
                 <div class="font-semibold mt-3">
                     Tamo - Vay tiền nhanh chóng
@@ -492,10 +492,10 @@
                         <span class="triangle-right"></span></div>
                 </div>
                 <div style="width: 137px;" class="mt-6">
-                    <img src="assets/tamo.png" alt="">
+                    <img class="lazy" data-src="assets/tamo.png" alt="">
                 </div>
                 <div class="absolute top-0 right-0 w-12">
-                    <img src="assets/new.png" alt="">
+                    <img class="lazy" data-src="assets/new.png" alt="">
                 </div>
                 <div class="font-semibold mt-3">
                     Tamo - Vay tiền nhanh chóng
@@ -636,31 +636,31 @@
         <div class="knowledge-slide mt-8">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="assets/post.jpg" alt="">
+                    <img class="lazy" data-src="assets/post.jpg" alt="">
                     <h5 class="mt-2 font-bold text-md">
                         <a href="#">WebVay – Vay tiền nhanh tới 10 triệu trong 70 ngày chỉ với CMND</a>
                     </h5>
                 </div>
                 <div class="swiper-slide">
-                    <img src="assets/post.jpg" alt="">
+                    <img class="lazy" data-src="assets/post.jpg" alt="">
                     <h5 class="mt-2 font-bold text-md">
                         <a href="#">WebVay – Vay tiền nhanh tới 10 triệu trong 70 ngày chỉ với CMND</a>
                     </h5>
                 </div>
                 <div class="swiper-slide">
-                    <img src="assets/post.jpg" alt="">
+                    <img class="lazy" data-src="assets/post.jpg" alt="">
                     <h5 class="mt-2 font-bold text-md">
                         <a href="#">WebVay – Vay tiền nhanh tới 10 triệu trong 70 ngày chỉ với CMND</a>
                     </h5>
                 </div>
                 <div class="swiper-slide">
-                    <img src="assets/post.jpg" alt="">
+                    <img class="lazy" data-src="assets/post.jpg" alt="">
                     <h5 class="mt-2 font-bold text-md">
                         <a href="#">WebVay – Vay tiền nhanh tới 10 triệu trong 70 ngày chỉ với CMND</a>
                     </h5>
                 </div>
                 <div class="swiper-slide">
-                    <img src="assets/post.jpg" alt="">
+                    <img class="lazy" data-src="assets/post.jpg" alt="">
                     <h5 class="mt-2 font-bold text-md">
                         <a href="#">WebVay – Vay tiền nhanh tới 10 triệu trong 70 ngày chỉ với CMND</a>
                     </h5>
@@ -686,7 +686,7 @@
         </div>
         <div class="mt-5 flex gap-10">
             <div class="flex-1">
-                <img src="assets/post.jpg" alt="">
+                <img class="lazy" data-src="assets/post.jpg" alt="">
                 <p class="font-bold">WebVay – Vay tiền nhanh tới 10 triệu trong 70 ngày chỉ với CMND</p>
                 <p class="text-sm text-gray-600">23/12/2020</p>
                 <p>
@@ -696,7 +696,7 @@
             <div class="flex-1 flex flex-col gap-7">
                 <div class="flex gap-4">
                     <div style="width: 270px;">
-                        <img src="assets/post.jpg" alt="">
+                        <img class="lazy" data-src="assets/post.jpg" alt="">
                     </div>
                     <div>
                         <p class="font-bold">WebVay – Vay tiền nhanh tới 10 triệu trong 70 ngày chỉ với CMND</p>
@@ -708,7 +708,7 @@
                 </div>
                 <div class="flex gap-4">
                     <div style="width: 270px;">
-                        <img src="assets/post.jpg" alt="">
+                        <img class="lazy" data-src="assets/post.jpg" alt="">
                     </div>
                     <div>
                         <p class="font-bold">WebVay – Vay tiền nhanh tới 10 triệu trong 70 ngày chỉ với CMND</p>
@@ -720,7 +720,7 @@
                 </div>
                 <div class="flex gap-4">
                     <div style="width: 270px;">
-                        <img src="assets/post.jpg" alt="">
+                        <img class="lazy" data-src="assets/post.jpg" alt="">
                     </div>
                     <div>
                         <p class="font-bold">WebVay – Vay tiền nhanh tới 10 triệu trong 70 ngày chỉ với CMND</p>
@@ -752,7 +752,7 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide flex gap-4">
                     <div class="flex-1 flex">
-                        <img src="assets/avatar.jpg" style="width: 150px; height: 150px;" class="rounded-full" alt="">
+                        <img class="lazy" data-src="assets/avatar.jpg" style="width: 150px; height: 150px;" class="rounded-full" alt="">
                         <div class="pl-3">
                             <p class="rating">
                                 <i class="fas fa-star"></i>
@@ -770,7 +770,7 @@
                         </div>
                     </div>
                     <div class="flex-1 flex">
-                        <img src="assets/avatar.jpg" style="width: 150px; height: 150px;" class="rounded-full" alt="">
+                        <img class="lazy" data-src="assets/avatar.jpg" style="width: 150px; height: 150px;" class="rounded-full" alt="">
                         <div class="pl-3">
                             <p class="rating">
                                 <i class="fas fa-star"></i>
@@ -790,7 +790,7 @@
                 </div>
                 <div class="swiper-slide flex gap-4">
                     <div class="flex-1 flex">
-                        <img src="assets/avatar.jpg" style="width: 150px; height: 150px;" class="rounded-full" alt="">
+                        <img class="lazy" data-src="assets/avatar.jpg" style="width: 150px; height: 150px;" class="rounded-full" alt="">
                         <div class="pl-2">
                             <p class="rating">
                                 <i class="fas fa-star"></i>
@@ -808,7 +808,7 @@
                         </div>
                     </div>
                     <div class="flex-1 flex">
-                        <img src="assets/avatar.jpg" style="width: 150px; height: 150px;" class="rounded-full" alt="">
+                        <img class="lazy" data-src="assets/avatar.jpg" style="width: 150px; height: 150px;" class="rounded-full" alt="">
                         <div class="pl-2">
                             <p class="rating">
                                 <i class="fas fa-star"></i>
@@ -844,34 +844,34 @@
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                    <img src="assets/shinhan.jpg" alt="">
+                    <img class="lazy" data-src="assets/shinhan.jpg" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <img src="assets/shinhan.jpg" alt="">
+                    <img class="lazy" data-src="assets/shinhan.jpg" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <img src="assets/shinhan.jpg" alt="">
+                    <img class="lazy" data-src="assets/shinhan.jpg" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <img src="assets/shinhan.jpg" alt="">
+                    <img class="lazy" data-src="assets/shinhan.jpg" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <img src="assets/shinhan.jpg" alt="">
+                    <img class="lazy" data-src="assets/shinhan.jpg" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <img src="assets/shinhan.jpg" alt="">
+                    <img class="lazy" data-src="assets/shinhan.jpg" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <img src="assets/shinhan.jpg" alt="">
+                    <img class="lazy" data-src="assets/shinhan.jpg" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <img src="assets/shinhan.jpg" alt="">
+                    <img class="lazy" data-src="assets/shinhan.jpg" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <img src="assets/shinhan.jpg" alt="">
+                    <img class="lazy" data-src="assets/shinhan.jpg" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <img src="assets/shinhan.jpg" alt="">
+                    <img class="lazy" data-src="assets/shinhan.jpg" alt="">
                 </div>
             </div>
         </div>
