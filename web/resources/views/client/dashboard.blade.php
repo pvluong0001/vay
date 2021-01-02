@@ -9,7 +9,7 @@
     <link rel="preload" crossorigin href="fontawesome-5.15.1/webfonts/fa-brands-400.woff2" as="font">
     <link rel="preload" crossorigin href="fontawesome-5.15.1/webfonts/fa-solid-900.woff2" as="font">
     <link rel="stylesheet" href="fontawesome-5.15.1/css/all.css">
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 </head>
 <body>
 <!-- top info -->
@@ -973,6 +973,6 @@
 </div>
 <!-- end modal -->
 
-<script src="{{ asset('js/app.js') }}"></script>
+<script src="{{ mix('js/app.js') }}"></script>
 </body>
 </html>
