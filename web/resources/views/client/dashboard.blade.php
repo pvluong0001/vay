@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lit</title>
     <base href="{{ asset('') }}">
-    <link rel="preload" href="fontawesome-5.15.1/webfonts/fa-regular-400.woff2" as="font">
-    <link rel="preload" href="fontawesome-5.15.1/webfonts/fa-brands-400.woff2" as="font">
-    <link rel="preload" href="fontawesome-5.15.1/webfonts/fa-solid-900.woff2" as="font">
+    <link rel="preload" crossorigin href="fontawesome-5.15.1/webfonts/fa-regular-400.woff2" as="font">
+    <link rel="preload" crossorigin href="fontawesome-5.15.1/webfonts/fa-brands-400.woff2" as="font">
+    <link rel="preload" crossorigin href="fontawesome-5.15.1/webfonts/fa-solid-900.woff2" as="font">
     <link rel="stylesheet" href="fontawesome-5.15.1/css/all.css">
     <link rel="stylesheet" href="css/app.css">
 </head>
