@@ -14,3 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', \App\Http\Controllers\DashboardController::class);
+Route::get('/{slug}-{post}.html', [\App\Http\Controllers\ClientController::class, 'postDetail'])
+    ->name('post.detail')
+    ->where([
+        'slug' => '[a-zA-Z0-9-]+',
+        'post' => '[0-9]+'
+    ]);

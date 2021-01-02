@@ -6,6 +6,51 @@
     max-width: 1140px;
 }
 
+.menu li:hover a {
+    @apply hover:text-green-500 block;
+}
+
+.menu li {
+    @apply cursor-pointer;
+}
+
+.menu li.active a {
+    @apply text-green-500 text-white;
+}
+
+.menu .sub-menu {
+    @apply top-7 left-0 w-60 bg-white p-2 z-10 shadow-xl rounded-md border-t pl-5 absolute hidden;
+    border: 1px solid #c2c2c2;
+}
+
+.sub-menu:before {
+    @apply absolute;
+    content: "";
+    border-style: solid;
+    border-width: 8px 10px;
+    border-color: transparent transparent #c2c2c2 transparent;
+    left: 20px;
+    top: -16px;
+}
+
+.menu .sub-menu li {
+    @apply my-2;
+}
+
+.menu li:hover .sub-menu {
+    @apply block;
+}
+
+/** for description */
+.description ul {
+    @apply list-disc pl-4;
+}
+
+/** for content */
+.content img {
+    @apply mx-5;
+}
+
 .modal {
     transition: opacity 0.25s ease;
 }
@@ -35,11 +80,6 @@ body.modal-active {
 /** menu */
 .logo img {
     max-width: 210px;
-}
-
-li.active {
-    /** green 500 */
-    color: rgb(16, 185, 129);
 }
 
 .light-blue {

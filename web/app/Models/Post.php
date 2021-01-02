@@ -3,9 +3,8 @@
 namespace App\Models;
 
 use Backpack\CRUD\app\Models\Traits\CrudTrait;
+use Cviebrock\EloquentSluggable\Sluggable;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Str;
-use Intervention\Image\ImageManagerStatic as Image;
 
 /**
  * Class Post
@@ -15,6 +14,7 @@ use Intervention\Image\ImageManagerStatic as Image;
 class Post extends Model
 {
     use CrudTrait;
+    use Sluggable;
 
     /*
     |--------------------------------------------------------------------------
@@ -26,7 +26,7 @@ class Post extends Model
     // protected $primaryKey = 'id';
     // public $timestamps = false;
     protected $guarded = ['id'];
-    protected $fillable = ['image', 'title', 'description', 'content'];
+    protected $fillable = ['image', 'title', 'description', 'content', 'user_id', 'slug'];
     // protected $hidden = [];
     // protected $dates = [];
 
@@ -59,4 +59,12 @@ class Post extends Model
     | MUTATORS
     |--------------------------------------------------------------------------
     */
+    public function sluggable()
+    {
+        return [
+            'slug' => [
+                'source' => 'title',
+            ],
+        ];
+    }
 }
