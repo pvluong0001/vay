@@ -16,6 +16,13 @@ services:
     networks:
       - vay
 
+  npm:
+    image: node:15.5.0-alpine3.10
+    working_dir: /app
+    volumes:
+      - ./web/:/app
+    command: echo true
+
   composer:
     image: composer:2.0.4
     volumes:

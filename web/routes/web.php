@@ -13,6 +13,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return 'Nothing here';
-});
+Route::get('/', \App\Http\Controllers\DashboardController::class);
