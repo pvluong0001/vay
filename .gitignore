@@ -4,4 +4,3 @@ web/vendor
 web/.env
 web/node_modules
 web/public/packages
-web/public/fonts
