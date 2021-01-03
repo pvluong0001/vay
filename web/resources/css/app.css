@@ -79,7 +79,7 @@ body.modal-active {
 
 /** menu */
 .logo img {
-    max-width: 210px;
+    max-width: 130px;
 }
 
 .light-blue {
@@ -174,4 +174,26 @@ body.modal-active {
 
 .branch .swiper-slide-active {
     opacity: 1;
+}
+
+/** helper */
+.highlight {
+    @apply text-green-700;
+}
+
+/** tabs */
+.tab {
+    @apply text-base py-2 px-4 hover:bg-green-600 hover:text-white cursor-pointer;
+}
+
+.tab.active {
+    @apply bg-green-500 text-white;
+}
+
+.tab-content {
+    @apply hidden;
+}
+
+.tab-content.active {
+    @apply block;
 }

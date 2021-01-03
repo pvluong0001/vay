@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Requests\PackageRequest;
+use App\Models\Category;
 use App\Models\Post;
 use Backpack\CRUD\app\Http\Controllers\CrudController;
 use Backpack\CRUD\app\Library\CrudPanel\CrudPanelFacade as CRUD;
@@ -91,6 +92,24 @@ class PackageCrudController extends CrudController
             'name' => 'new',
             'type' => 'checkbox'
         ]);
+        CRUD::addField([    // Select2Multiple = n-n relationship (with pivot table)
+            'label'     => "Categories",
+            'type'      => 'select2_multiple',
+            'name'      => 'categories', // the method that defines the relationship in your Model
+
+            // optional
+            'entity'    => 'categories', // the method that defines the relationship in your Model
+            'model'     => Category::class, // foreign key model
+            'attribute' => 'name', // foreign key attribute that is shown to user
+            'pivot'     => true, // on create&update, do you need to add/delete pivot table entries?
+            'select_all' => true, // show Select All and Clear buttons?
+
+            // optional
+//            'options'   => (function ($query) {
+//                return $query->orderBy('name', 'ASC')->where('depth', 1)->get();
+//            }),
+            // force the related options to be a custom query, instead of all(); you can use this to filter the results show in the select
+        ]);
         CRUD::addField([
             'name' => 'title',
         ]);
@@ -108,6 +127,9 @@ class PackageCrudController extends CrudController
         CRUD::addField([
             'name' => 'description',
             'type' => 'wysiwyg'
+        ]);
+        CRUD::addField([
+            'name' => 'register_link',
         ]);
         CRUD::addField([
             'name' => 'post_id',

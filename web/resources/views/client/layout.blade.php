@@ -44,16 +44,19 @@
                 <li class="active">
                     <a href="#">Trang chủ</a>
                 </li>
-                <li><a href="#">Vay tiền nhanh</a></li>
+                @foreach($cats as $cat)
+                    <li><a href="{{ route('category', ['category' => $cat->slug]) }}">{{ $cat->name }}</a></li>
+                @endforeach
                 <li><a href="#">Cầm đồ online</a></li>
-                <li><a href="#">Vay tín chấp</a></li>
                 <li class="relative">
-                    Kiến thức
+                    Kiến thức vay
                     <ul class="sub-menu">
-                        <li><a href="#">Kiến thức thẻ tín dụng</a></li>
-                        <li><a href="#">Kiến thức thẻ ghi nợ</a></li>
+                        @foreach($types as $type)
+                        <li><a href="{{ route('type', ['type' => $type->slug]) }}">{{ $type->name }}</a></li>
+                        @endforeach
                     </ul>
                 </li>
+                <li><a href="#">Về chúng tôi</a></li>
             </ul>
         </div>
         <div class="ml-auto">
@@ -125,33 +128,32 @@
             </ul>
         </div>
         <div class="flex-1">
-            <p class="font-bold text-lg">Vay tiền nhanh</p>
+            <p class="font-bold text-lg">Mở thẻ tín dụng</p>
             <ul class="list-disc pl-4 mt-2">
-                <li class="mb-1">Oncredit</li>
-                <li class="mb-1">Moneycat</li>
-                <li class="mb-1">Doctor Đồng</li>
-                <li class="mb-1">Tamo</li>
-                <li class="mb-1">Senmo</li>
+                <li class="mb-1">Thẻ tín dụng Vietcombank</li>
+                <li class="mb-1">Thẻ tín dụng Citibank</li>
+                <li class="mb-1">Thẻ tín dụng Sacombank</li>
+                <li class="mb-1">Thẻ tín dụng Vpbank</li>
+                <li class="mb-1">Thẻ tín dụng Shinhanbank</li>
             </ul>
         </div>
         <div class="flex-1">
-            <p class="font-bold text-lg">Vay tiền nhanh</p>
+            <p class="font-bold text-lg">Vay tín chấp</p>
             <ul class="list-disc pl-4 mt-2">
-                <li class="mb-1">Oncredit</li>
-                <li class="mb-1">Moneycat</li>
-                <li class="mb-1">Doctor Đồng</li>
-                <li class="mb-1">Tamo</li>
-                <li class="mb-1">Senmo</li>
+                <li class="mb-1">Vay tín chấp Vietcombank</li>
+                <li class="mb-1">Vay tín chấp Vpbank</li>
+                <li class="mb-1">Vay tín chấp Techcombank</li>
+                <li class="mb-1">Vay tín chấp OCB</li>
+                <li class="mb-1">Vay tín chấp BIDV</li>
             </ul>
         </div>
         <div class="flex-1">
-            <p class="font-bold text-lg">Vay tiền nhanh</p>
+            <p class="font-bold text-lg">Về vay tiền online</p>
             <ul class="list-disc pl-4 mt-2">
-                <li class="mb-1">Oncredit</li>
-                <li class="mb-1">Moneycat</li>
-                <li class="mb-1">Doctor Đồng</li>
-                <li class="mb-1">Tamo</li>
-                <li class="mb-1">Senmo</li>
+                <li class="mb-1">Giới thiệu</li>
+                <li class="mb-1">Điều khoản sử dụng</li>
+                <li class="mb-1">Chính sách bảo mật</li>
+                <li class="mb-1">Sơ đồ website</li>
             </ul>
         </div>
     </div>
@@ -159,11 +161,11 @@
 <!-- footer -->
 
 <!-- cert -->
-<div class="border-t border-white py-4 bg-gray-700 text-white">
-    <div class="container text-center">
-        Bản quyền thuộc về Lit
-    </div>
-</div>
+{{--<div class="border-t border-white py-4 bg-gray-700 text-white">--}}
+{{--    <div class="container text-center">--}}
+{{--        Bản quyền thuộc về Lit--}}
+{{--    </div>--}}
+{{--</div>--}}
 <!-- cert -->
 
 <!--Modal-->

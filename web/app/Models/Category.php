@@ -6,12 +6,7 @@ use Backpack\CRUD\app\Models\Traits\CrudTrait;
 use Cviebrock\EloquentSluggable\Sluggable;
 use Illuminate\Database\Eloquent\Model;
 
-/**
- * Class Post
- * @package App\Models
- * @property integer user_id
- */
-class Post extends Model
+class Category extends Model
 {
     use CrudTrait;
     use Sluggable;
@@ -22,11 +17,11 @@ class Post extends Model
     |--------------------------------------------------------------------------
     */
 
-    protected $table = 'posts';
+    protected $table = 'categories';
     // protected $primaryKey = 'id';
     // public $timestamps = false;
     protected $guarded = ['id'];
-    protected $fillable = ['image', 'title', 'description', 'content', 'user_id', 'slug'];
+     protected $fillable = ['name', 'slug'];
     // protected $hidden = [];
     // protected $dates = [];
 
@@ -41,8 +36,8 @@ class Post extends Model
     | RELATIONS
     |--------------------------------------------------------------------------
     */
-    public function types() {
-        return $this->belongsToMany(Type::class, 'post_type');
+    public function packages() {
+        return $this->belongsToMany(Package::class, 'package_category');
     }
 
     /*
@@ -62,12 +57,17 @@ class Post extends Model
     | MUTATORS
     |--------------------------------------------------------------------------
     */
-    public function sluggable()
+    public function sluggable(): array
     {
         return [
             'slug' => [
-                'source' => 'title',
-            ],
+                'source' => 'name'
+            ]
         ];
+    }
+
+    public function getRouteKeyName()
+    {
+        return 'slug';
     }
 }

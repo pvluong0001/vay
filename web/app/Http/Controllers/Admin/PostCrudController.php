@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Requests\PostRequest;
+use App\Models\Category;
+use App\Models\Type;
 use Backpack\CRUD\app\Http\Controllers\CrudController;
 use Backpack\CRUD\app\Library\CrudPanel\CrudPanelFacade as CRUD;
 
@@ -120,6 +122,24 @@ class PostCrudController extends CrudController
             'attributes' => [
                 'required' => 'required'
             ]
+        ]);
+        CRUD::addField([    // Select2Multiple = n-n relationship (with pivot table)
+            'label'     => "Types",
+            'type'      => 'select2_multiple',
+            'name'      => 'types', // the method that defines the relationship in your Model
+
+            // optional
+            'entity'    => 'types', // the method that defines the relationship in your Model
+            'model'     => Type::class, // foreign key model
+            'attribute' => 'name', // foreign key attribute that is shown to user
+            'pivot'     => true, // on create&update, do you need to add/delete pivot table entries?
+            'select_all' => true, // show Select All and Clear buttons?
+
+            // optional
+//            'options'   => (function ($query) {
+//                return $query->orderBy('name', 'ASC')->where('depth', 1)->get();
+//            }),
+            // force the related options to be a custom query, instead of all(); you can use this to filter the results show in the select
         ]);
         CRUD::addField([
             'name' => 'image',

@@ -1,6 +1,7 @@
 // import Swiper JS
 import Swiper, {Pagination} from 'swiper';
 require('./modal');
+require('./tab');
 
 Swiper.use([Pagination]);
 // import Swiper styles
@@ -25,3 +26,6 @@ new Swiper('.knowledge-slide', {
         el: '.swiper-pagination',
     },
 });
+
+// tab
+window.initTab();

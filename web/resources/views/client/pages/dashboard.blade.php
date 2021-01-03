@@ -23,36 +23,35 @@
     <div class="light-blue mb-20">
         <div class="container pt-16">
             <div class="text-green-500 text-3xl text-center font-bold">
-                Tư vấn tài chính & Đánh giá sản phẩm vay online
+                Vay online trả góp hấp dẫn - Tư vấn vay miễn phí
             </div>
-            <div class="text-center text-lg mt-2">
-                So sánh sản phẩm vay, thẻ tín dụng từ nhiều ngân hàng và tổ chức tài chính khác nhau. Thông tin cung cấp rõ
-                ràng và trực quan để bạn dễ dàng so sánh và chọn lựa đúng sản phẩm mình cần.
+            <div class="text-justify text-lg mt-2">
+                Mang các sản phẩm <span class="highlight">vay online an toàn</span> đến từ ngân hàng và công ty tài chính khác nhau tới khách hàng. Vaytienonline123 cung cấp rất nhiều gói <b>vay tiền cấp tốc</b> cực uy tín dưới nhiều hình thức vay đa dạng để khách hàng lựa chọn như: <b>Vay online bằng CMND, sổ hộ khẩu; vay online bằng sim viettel; vay online bằng lái xe...</b> Các thông tin về <b>khoản vay online</b> trên web là hoàn toàn chính xác, rõ ràng và trực quan để người vay tiền có thể so sánh và lựa chọn ra gói vay thích hợp với nhu cầu tài chính của mình. Nếu có bất kì thắc mắc nào về <b>vay tiền online</b>, các bạn có thể nhắn tin với tư vấn viên của chúng tôi để được tư vấn online hoàn toàn miễn phí 24/7.
             </div>
             <div class="services flex mt-10">
                 <div class="flex-1 flex flex-col items-center p-4 hover:bg-white border-b-2 cursor-pointer hover:border-b-2 hover:border-blue-700 pb-6">
                     <img src="assets/service.png" style="width: 60px;" alt="">
-                    <span class="mt-2 text-xl font-bold">Vay nhanh</span>
+                    <span class="mt-2 text-xl font-bold">Vay tiền nhanh</span>
                 </div>
                 <div class="flex-1 flex flex-col items-center p-4 hover:bg-white border-b-2 cursor-pointer hover:border-b-2 hover:border-blue-700 pb-6">
                     <img src="assets/service.png" style="width: 60px;" alt="">
-                    <span class="mt-2 text-xl font-bold">Vay nhanh</span>
+                    <span class="mt-2 text-xl font-bold">Cầm đồ</span>
                 </div>
                 <div class="flex-1 flex flex-col items-center p-4 hover:bg-white border-b-2 cursor-pointer hover:border-b-2 hover:border-blue-700 pb-6">
                     <img src="assets/service.png" style="width: 60px;" alt="">
-                    <span class="mt-2 text-xl font-bold">Vay nhanh</span>
+                    <span class="mt-2 text-xl font-bold">Vay tín chấp</span>
                 </div>
                 <div class="flex-1 flex flex-col items-center p-4 hover:bg-white border-b-2 cursor-pointer hover:border-b-2 hover:border-blue-700 pb-6">
                     <img src="assets/service.png" style="width: 60px;" alt="">
-                    <span class="mt-2 text-xl font-bold">Vay nhanh</span>
+                    <span class="mt-2 text-xl font-bold">Thẻ tín dụng</span>
                 </div>
                 <div class="flex-1 flex flex-col items-center p-4 hover:bg-white border-b-2 cursor-pointer hover:border-b-2 hover:border-blue-700 pb-6">
                     <img src="assets/service.png" style="width: 60px;" alt="">
-                    <span class="mt-2 text-xl font-bold">Vay nhanh</span>
+                    <span class="mt-2 text-xl font-bold">Vay mua xe</span>
                 </div>
                 <div class="flex-1 flex flex-col items-center p-4 hover:bg-white border-b-2 cursor-pointer hover:border-b-2 hover:border-blue-700 pb-6">
                     <img src="assets/service.png" style="width: 60px;" alt="">
-                    <span class="mt-2 text-xl font-bold">Vay nhanh</span>
+                    <span class="mt-2 text-xl font-bold">Vay mua nhà</span>
                 </div>
             </div>
         </div>
@@ -63,12 +62,12 @@
     <div class="guide mb-20">
         <div class="container">
             <div class="text-green-500 text-3xl text-center font-bold">
-                Bạn đã biết cách sử dụng <span>abc</span> chưa ?
+                Sử dụng hiệu quả <span class="highlight">Vay Tiền Online 123</span> để nhận được tiền vay nhanh nhất
             </div>
             <div class="text-center text-lg mt-2">
-                Vay online với 3 bước đơn giản ...
+                Chỉ với 3 thao tác đơn giản trên điện thoại hoặc máy tính, bạn đã có thể tìm và lựa chọn <span class="highlight">khoản vay online</span> mình cần với <b>Vaytienonline123.com</b>. Sau khi đã có sản phẩm vay phù hợp, bạn đăng kí thông tin của mình với gói vay đó để hoàn tất thủ tục <b>vay online không cần gặp mặt</b> và chờ tiền được gửi về tài khoản thôi. Hãy sử dụng khoản <b>vay online</b> hợp lý nhé!
             </div>
-            <div class="steps flex gap-4">
+            <div class="steps flex gap-4 mt-10">
                 <div class="flex-1 shadow-md hover:shadow-xl flex flex-col items-center p-3 cursor-pointer">
                     <div style="width: 77px;">
                         <svg style="width: 100%; height: 100%;" xmlns="http://www.w3.org/2000/svg" id="Layer_3"
@@ -98,9 +97,9 @@
                         </svg>
                     </div>
                     <span class="mt-3 uppercase sm:font-bold">Bước 1</span>
-                    <span class="mt-1 font-bold text-xl">Tìm kiếm</span>
+                    <span class="mt-1 font-bold text-xl">Tìm kiếm khoản vay</span>
                     <p class="mt-1 text-md text-center">
-                        Chọn sản phẩm vay online bạn muốn tìm kiếm như vay nhanh, vay tín chấp, vay mua xe, mua nhà...
+                        Xem xét hết tất cả các sản phẩm <b>vay online như vay online chỉ cần CMND, vay tín chấp</b> hay <b>vay mua nhà, vay mua xe</b>, cầm đồ...Đâu là gói vay mà bạn cần hiện tại.
                     </p>
                 </div>
                 <div class="flex-1 shadow-md hover:shadow-xl flex flex-col items-center p-3 cursor-pointer">
@@ -131,10 +130,10 @@
                             </g>
                         </svg>
                     </div>
-                    <span class="mt-3 uppercase sm:font-bold">Bước 1</span>
-                    <span class="mt-1 font-bold text-xl">Tìm kiếm</span>
+                    <span class="mt-3 uppercase sm:font-bold">Bước 2</span>
+                    <span class="mt-1 font-bold text-xl">So sánh lựa chọn gói vay</span>
                     <p class="mt-1 text-md text-center">
-                        Chọn sản phẩm vay online bạn muốn tìm kiếm như vay nhanh, vay tín chấp, vay mua xe, mua nhà...
+                        So sánh các sản phẩm vay online từ ngân hàng, công ty tài chính được gợi ý trên <b>Vay Tiền Online 123</b>. Chọn ra gói vay online phù hợp nhất với bạn dựa trên lãi suất vay, điều kiện vay, hạn mức vay....
                     </p>
                 </div>
                 <div class="flex-1 shadow-md hover:shadow-xl flex flex-col items-center p-3 cursor-pointer">
@@ -165,10 +164,10 @@
                             </g>
                         </svg>
                     </div>
-                    <span class="mt-3 uppercase sm:font-bold">Bước 1</span>
-                    <span class="mt-1 font-bold text-xl">Tìm kiếm</span>
+                    <span class="mt-3 uppercase sm:font-bold">Bước 3</span>
+                    <span class="mt-1 font-bold text-xl">Đăng ký khoản vay</span>
                     <p class="mt-1 text-md text-center">
-                        Chọn sản phẩm vay online bạn muốn tìm kiếm như vay nhanh, vay tín chấp, vay mua xe, mua nhà...
+                        Sau khi lựa chọn được gói <b>vay online</b> tốt nhất, bạn chỉ cần bấm vào nút ĐĂNG KÍ VAY và điền các thông tin theo yêu cầu. Đây cũng chính là hồ sơ vay và sau khi điền đủ thông tin bạn sẽ nhận được thông báo Đăng kí vay thành công. Lúc này chỉ cần đợi tiền về tài khoản là đã <b>vay online</b> thành công rồi đấy!
                     </p>
                 </div>
             </div>
@@ -180,73 +179,32 @@
     <div class="product">
         <div class="container">
             <div class="text-green-500 text-3xl text-center font-bold">
-                Các sản phẩm online
+                Tổng hợp sản phẩm vay online HOT được nhiều người vay nhất hiện nay
             </div>
             <div class="mt-4 border-b-2">
                 <div class="tabs flex">
-                    <div class="flex-shrink-0 bg-green-500 text-white text-base py-2 px-4 hover:bg-green-600 cursor-pointer">
-                        Tab 1
+                    @foreach($categories as $category)
+                    <div class="tab" data-href="{{ $category->slug }}">
+                        {{ $category->name }}
                     </div>
-                    <div class="flex-shrink-0 text-base py-2 px-4 hover:bg-green-600 hover:text-white cursor-pointer">
-                        Tab 2
-                    </div>
+                    @endforeach
                 </div>
             </div>
-            <div class="mt-6 grid grid-cols-3 gap-10">
-                @foreach($packages as $index => $package)
-                <div class="shadow-md p-3 relative">
-                    <div class="relative panel-flag">
-                        <div class="panel-label">
-                            <span class="panel-label-text">TOP #{{ $index + 1 }} tốt nhất</span>
-                            <br>
-                            <span class="triangle-right"></span></div>
-                    </div>
-                    <div style="width: 137px;" class="mt-6">
-                        <img src="{{ $package->image }}" alt="">
-                    </div>
-                    <div class="absolute top-0 right-0 w-12">
-                        <img src="assets/new.png" alt="">
-                    </div>
-                    <div class="font-semibold mt-3">
-                        {{ $package->title }}
-                    </div>
-                    <div class="text-red-400 text-sm mt-1">
-                        {{ $package->subtitle }}
-                    </div>
-                    <div class="flex mt-2">
-                        <div class="flex-1 text-center">
-                            <p class="font-bold">Khoản vay</p>
-                            <p class="text-5xl mt-2 font-bold text-blue-800">{{ $package->range_borrow }}</p>
-                            <p class="mt-2 font-semibold">triệu</p>
-                        </div>
-                        <div class="flex-1 text-center">
-                            <p class="font-bold">Lái suất</p>
-                            <p class="text-5xl mt-2 font-bold text-blue-800">{{ $package->interest_rate }} %</p>
-                            <p class="mt-2 font-semibold">năm</p>
-                        </div>
-                    </div>
-                    <div class="mt-2 description">
-                        {!! $package->description !!}
-                    </div>
-                    @if($package->post_id)
-                        <div class="mt-4">
-                            <a href="{{ route('post.detail', ['slug' => $package->post->slug, 'post' => $package->post->id]) }}" class="text-underline text-blue-700">Tìm hiểu thêm</a>
-                        </div>
-                    @endif
-                    <div class="mt-2">
-                        <a class="block bg-green-500 text-white text-base font-semibold py-2 px-4 rounded-sm shadow-md hover:bg-green-600 cursor-pointer uppercase text-center">
-                            Đăng ký vay ngay
-                        </a>
-                    </div>
+            @foreach($categories as $category)
+            <div data-tab="{{ $category->slug }}" class="tab-content">
+                <div class="mt-6 grid grid-cols-3 gap-10">
+                    @foreach($category->packages as $index => $package)
+                        <x-package-item :package="$package" :index="$index"/>
+                    @endforeach
                 </div>
-                @endforeach
+                <div class="my-6 text-center">
+                    <a href="{{ route('category', ['category' => $category->slug]) }}" class="bg-green-500 text-white text-base font-semibold py-2 px-4 rounded-md shadow-md hover:bg-green-600"
+                            type="button">
+                        Xem thêm gói vay khác
+                    </a>
+                </div>
             </div>
-            <div class="my-6 text-center">
-                <button class="bg-green-500 text-white text-base font-semibold py-2 px-4 rounded-md shadow-md hover:bg-green-600"
-                        type="button">
-                    Xem thêm
-                </button>
-            </div>
+            @endforeach
         </div>
     </div>
     <!-- product -->
@@ -255,7 +213,7 @@
     <div class="light-blue pb-16">
         <div class="container pt-16">
             <div class="text-green-500 text-3xl text-center font-bold">
-                Tại sao chọn và sử dụng vaytien
+                Với nền tảng Vay tiền online 123 bạn được trải nghiệm những gì?
             </div>
             <div class="flex mt-16 gap-5">
                 <div class="flex-1 flex flex-col items-center">
@@ -278,7 +236,7 @@
                     </div>
                     <div class="uppercase font-bold text-lg mt-2">Hoàn toàn miễn phí</div>
                     <p class="text-center">
-                        Nền tảng so sánh miễn phí, dễ sử dụng, và minh bạch
+                        Cung cấp thông tin về các gói <b>vay online</b>, so sánh các gói vay, tư vấn đăng kí vay hoàn toàn không mất phí. Giao diện rõ ràng, dễ sử dụng
                     </p>
                 </div>
                 <div class="flex-1 flex flex-col items-center">
@@ -299,9 +257,9 @@
                                                   data-original="#000000" class="active-path" data-old_color="#000000"
                                                   fill="#4ABA48"></path> </g> </g> </g></g> </svg>
                     </div>
-                    <div class="uppercase font-bold text-lg mt-2">Hoàn toàn miễn phí</div>
+                    <div class="uppercase font-bold text-lg mt-2">Cập nhật liên tục</div>
                     <p class="text-center">
-                        Nền tảng so sánh miễn phí, dễ sử dụng, và minh bạch
+                        Các sản phẩm <b>vay online</b> được cập nhật liên tục mỗi giờ bao gồm cả các khuyến mãi dành cho người lần đầu vay, hay lãi suất trả góp 0%....
                     </p>
                 </div>
                 <div class="flex-1 flex flex-col items-center">
@@ -322,9 +280,9 @@
                                                   data-original="#000000" class="active-path" data-old_color="#000000"
                                                   fill="#4ABA48"></path> </g> </g> </g></g> </svg>
                     </div>
-                    <div class="uppercase font-bold text-lg mt-2">Hoàn toàn miễn phí</div>
+                    <div class="uppercase font-bold text-lg mt-2">Chuyên nghiệp tuyệt đối</div>
                     <p class="text-center">
-                        Nền tảng so sánh miễn phí, dễ sử dụng, và minh bạch
+                        Đội ngũ tư vấn viên nhiệt tình, nhiều kinh nghiệm và có trách nhiệm, luôn luôn túc trực 24/7 để giải đáp các thắc mắc trong quá trình tìm thông tin về gói vay hay đăng kí vay online của khách hàng. Sự chuyên nghiệp của <b>Vay tiền online 123</b> chưa bao giờ làm khách hàng thất vọng
                     </p>
                 </div>
             </div>
@@ -336,44 +294,21 @@
     <div class="mb-10">
         <div class="container pt-16 overflow-hidden">
             <div class="text-green-500 text-3xl text-center font-bold">
-                Kiến thức tài chính
+                Vay online an toàn với những kiến thức về vay vốn mới nhất
             </div>
             <div class="text-center text-lg mt-2">
-                So sánh sản phẩm vay, thẻ tín dụng từ nhiều ngân hàng và tổ chức tài chính khác nhau. Thông tin cung cấp rõ
-                ràng và trực quan để bạn dễ dàng so sánh và chọn lựa đúng sản phẩm mình cần.
+                Cập nhật những kiến thức hữu ích về tài chính cá nhân và các sản phẩm vay online cũng như thẻ tín dụng
             </div>
             <div class="knowledge-slide mt-8">
                 <div class="swiper-wrapper">
+                    @foreach($posts as $post)
                     <div class="swiper-slide">
-                        <img src="assets/post.jpg" alt="">
+                        <a href="{{ route('post.detail', ['slug' => $post->slug, 'post' => $post->id]) }}"><img src="{{ $post->image }}" alt=""></a>
                         <h5 class="mt-2 font-bold text-md">
-                            <a href="#">WebVay – Vay tiền nhanh tới 10 triệu trong 70 ngày chỉ với CMND</a>
+                            <a href="{{ route('post.detail', ['slug' => $post->slug, 'post' => $post->id]) }}">{{ $post->title }}</a>
                         </h5>
                     </div>
-                    <div class="swiper-slide">
-                        <img src="assets/post.jpg" alt="">
-                        <h5 class="mt-2 font-bold text-md">
-                            <a href="#">WebVay – Vay tiền nhanh tới 10 triệu trong 70 ngày chỉ với CMND</a>
-                        </h5>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="assets/post.jpg" alt="">
-                        <h5 class="mt-2 font-bold text-md">
-                            <a href="#">WebVay – Vay tiền nhanh tới 10 triệu trong 70 ngày chỉ với CMND</a>
-                        </h5>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="assets/post.jpg" alt="">
-                        <h5 class="mt-2 font-bold text-md">
-                            <a href="#">WebVay – Vay tiền nhanh tới 10 triệu trong 70 ngày chỉ với CMND</a>
-                        </h5>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="assets/post.jpg" alt="">
-                        <h5 class="mt-2 font-bold text-md">
-                            <a href="#">WebVay – Vay tiền nhanh tới 10 triệu trong 70 ngày chỉ với CMND</a>
-                        </h5>
-                    </div>
+                    @endforeach
                 </div>
             </div>
             <div class="mt-16 flex justify-center">
@@ -388,24 +323,17 @@
     <div class="mb-10">
         <div class="container pt-16 overflow-hidden">
             <div class="text-green-500 text-3xl text-center font-bold">
-                Tin tức mới nhất
+                Tin tức tài chính mới nhất
             </div>
             <div class="text-center text-lg mt-2">
-                Cập nhật thông tin ưu đãi và tin tức mới nhất liên quan đến lĩnh vực tài chính cá nhân, thẻ tín dụng và sản phẩm vay online.
+                <b>Vay tiền online 123</b> luôn cập nhật những tin tức mới nhất về tài chính cá nhân, thẻ tín dụng cá nhân và các sản phẩm <b>vay online</b>; để khách hàng có thể tìm hiểu thêm nhiều thông tin về các gói vay, các loại thẻ tín dụng cũng như thông tin về các ngân hàng , công ty tài chính cung cấp các dịch vụ tài chính cá nhân, cho vay cá nhân
             </div>
             <div class="mt-5 flex gap-10">
                 @if($posts->count())
                     @php
                     $firstPost = $posts->first();
                     @endphp
-                    <div class="flex-1">
-                        <img src="{{ $firstPost->image }}" alt="">
-                        <p class="font-bold">{{ $firstPost->title }}</p>
-                        <p class="text-sm text-gray-600">{{ $firstPost->created_at }}</p>
-                        <p>
-                            {{ $firstPost->description }}
-                        </p>
-                    </div>
+                    <x-post-item class="flex-1" :post="$firstPost"/>
                 @endif
                 <div class="flex-1 flex flex-col gap-7">
                     @foreach($posts as $post)
