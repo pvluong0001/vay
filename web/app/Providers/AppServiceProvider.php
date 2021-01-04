@@ -29,6 +29,17 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         Post::observe(PostObserver::class);
+        View::composer('client.pages.category', function($view) {
+            $data = $view->getData();
+            $category = $data['category'];
+
+            $posts = Post::whereHas('types', function($query) use ($category) {
+                $query->where('types.id', '=', $category->id);
+            })->limit(8)->get();
+
+            $view->with('posts', $posts);
+            $view->with('type', Type::findOrFail($category->id));
+        });
         View::composer('client.layout', function($view) {
             $view->with('types', Type::all());
             $view->with('cats', Category::all());

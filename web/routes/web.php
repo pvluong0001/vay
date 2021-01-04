@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', \App\Http\Controllers\DashboardController::class);
 Route::get('/tin-tuc', [\App\Http\Controllers\ClientController::class, 'posts'])->name('posts');
+Route::get('/gioi-thieu', [\App\Http\Controllers\ClientController::class, 'about'])->name('about');
 Route::get('/{type}', [\App\Http\Controllers\ClientController::class, 'type'])->name('type');
 Route::get('/goi-dich-vu/{category}', [\App\Http\Controllers\ClientController::class, 'category'])->name('category');
 Route::get('/{slug}-{post}.html', [\App\Http\Controllers\ClientController::class, 'postDetail'])

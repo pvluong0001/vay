@@ -8,17 +8,20 @@ class Block extends Component
 {
     public $class;
     public $subtitle;
+    public $title;
 
     /**
      * Create a new component instance.
      *
      * @param string $class
      * @param string $subtitle
+     * @param string $title
      */
-    public function __construct(string $class = '', string $subtitle = '')
+    public function __construct(string $class = '', string $subtitle = '', string $title = '')
     {
         $this->class = $class;
         $this->subtitle = $subtitle;
+        $this->title = $title;
     }
 
     /**

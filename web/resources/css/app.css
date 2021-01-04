@@ -1,9 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@tailwind screens;
 
 .container {
     max-width: 1140px;
+    @apply px-3;
 }
 
 .menu li:hover a {
@@ -78,6 +80,10 @@ body.modal-active {
 }
 
 /** menu */
+.logo {
+    @apply flex-1;
+}
+
 .logo img {
     max-width: 130px;
 }
@@ -181,6 +187,14 @@ body.modal-active {
     @apply text-green-700;
 }
 
+.drawer {
+    @apply -translate-x-full;
+}
+
+.draw-open {
+    @apply translate-x-0;
+}
+
 .main-button {
     @apply bg-green-500 text-white text-base font-semibold py-2 px-4 rounded-md shadow-md hover:bg-green-600;
 }
@@ -200,4 +214,36 @@ body.modal-active {
 
 .tab-content.active {
     @apply block;
+}
+
+/** responsive */
+@screen md {
+    .logo {
+        @apply flex-none;
+    }
+}
+
+.parallax-about {
+    background-image: url("../images/gioi-thieu.jpg");
+}
+
+.my-job {
+    background-image: url("../images/banner.png");
+}
+
+.faq-title::after {
+    content: "";
+    background: url(//thachpham.com/chevron-down-black.svg) no-repeat right center;
+    position: absolute;
+    right: theme('spacing[2]');
+    top: theme('spacing[2]');
+    z-index: 1;
+    width: 10px;
+    height: 10px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    transition: all .3s;
 }

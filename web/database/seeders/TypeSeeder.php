@@ -17,8 +17,8 @@ class TypeSeeder extends Seeder
         Type::insert([
             [
                 'id' => 1,
-                'name' => 'Kiến thức thay tiền nhanh',
-                'slug' => 'kien-thuc-thay-tien-nhanh',
+                'name' => 'Kiến thức vay tiền nhanh',
+                'slug' => 'kien-thuc-vay-tien-nhanh',
             ],
             [
                 'id' => 2,

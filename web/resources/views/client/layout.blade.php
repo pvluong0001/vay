@@ -36,10 +36,13 @@
 <!-- menu -->
 <div class="menu shadow-md">
     <div class="container flex py-3 items-center">
-        <div class="logo">
-            <a href=""><img src="assets/logo.png" alt=""></a>
+        <div class="block md:hidden">
+            <button type="button" class="main-button open-draw"><i class="fas fa-align-justify"></i></button>
         </div>
-        <div class="px-4">
+        <div class="logo">
+            <a href=""><img class="mx-auto" src="assets/logo.png" alt=""></a>
+        </div>
+        <div class="px-4 flex-1 hidden md:block">
             <ul class="flex gap-4 font-bold">
                 <li class="active">
                     <a href="#">Trang chủ</a>
@@ -55,10 +58,14 @@
                         @endforeach
                     </ul>
                 </li>
-                <li><a href="#">Về chúng tôi</a></li>
+                <li><a href="{{ route('about') }}">Về chúng tôi</a></li>
             </ul>
         </div>
-        <div class="ml-auto">
+        <div
+            class="ml-3 bg-green-500 hover:bg-green-600 px-2 py-1 rounded-md cursor-pointer modal-overlay md:hidden modal-open">
+            <i class="fas fa-search text-white"></i>
+        </div>
+        <div class="hidden md:block">
             <button
                 class="flex-shrink-0 bg-green-500 text-white text-base font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-green-600"
                 type="button">
@@ -75,8 +82,8 @@
 
 <!-- branch -->
 <div class="branch py-14">
-    <div class="container overflow-hidden">
-        <div class="branch-slide">
+    <div class="container">
+        <div class="branch-slide overflow-hidden">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
@@ -171,8 +178,8 @@
 <!-- cert -->
 
 <!--Modal-->
-<div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center">
-    <div class="modal-overlay absolute w-full h-full bg-white opacity-95"></div>
+<div class="modal z-50 opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center">
+    <div class="modal-overlay absolute w-full h-full bg-gray-700 opacity-95"></div>
 
     <div class="modal-container fixed w-full h-full z-50 overflow-y-auto ">
 
@@ -187,26 +194,18 @@
         </div>
 
         <!-- Add margin if you want to see grey behind the modal-->
-        <div class="modal-content container mx-auto h-auto text-left p-4">
-
-            <!--Title-->
-            <div class="flex justify-between items-center pb-2">
-                <p class="text-2xl font-bold">Full Screen Modal!</p>
-            </div>
-
+        <div class="modal-content container mx-auto h-full text-left p-4 flex items-center justify-center">
             <!--Body-->
-            <p>Modal content can go here</p>
-
-            <!--Footer-->
-            <div class="flex justify-end pt-2">
-                <button
-                    class="px-4 bg-transparent p-3 rounded-lg text-indigo-500 hover:bg-gray-100 hover:text-indigo-400 mr-2">
-                    Action
-                </button>
-                <button class="modal-close px-4 bg-indigo-500 p-3 rounded-lg text-white hover:bg-indigo-400">Close
-                </button>
-            </div>
-
+            <form action="{{ route('posts') }}" method="GET" class="block w-full">
+                <div class="relative flex w-full flex-wrap items-stretch mb-3">
+                    <input type="text" name="s" placeholder="Tìm kiếm"
+                           class="px-3 py-3 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm border border-gray-400 outline-none focus:outline-none focus:shadow-outline w-full pr-10"/>
+                    <span
+                        class="z-10 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 right-0 pr-3 py-3">
+                    <i class="fas fa-search"></i>
+                </span>
+                </div>
+            </form>
         </div>
     </div>
 </div>

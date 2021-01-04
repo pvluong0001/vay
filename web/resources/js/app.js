@@ -27,6 +27,13 @@ new Swiper('.knowledge-slide', {
     },
 });
 
+// autoload basic slide
+window.loadSlide = (className, options = {}) => {
+    if(document.querySelector(className)) {
+        new Swiper(className, options)
+    }
+}
+
 // tab
 window.initTab();
 window.log = (type, message = '') => {
@@ -34,3 +41,25 @@ window.log = (type, message = '') => {
     console.log(message);
     console.groupEnd();
 }
+
+// drawer
+const drawerBtn = document.querySelector('.open-draw');
+const layer = document.querySelector('.draw-layer');
+const drawer = document.querySelector('.drawer');
+drawerBtn.addEventListener('click', () => {
+    layer.classList.toggle('hidden')
+    drawer.classList.toggle('draw-open')
+})
+layer.addEventListener('click', () => {
+    layer.classList.toggle('hidden')
+    drawer.classList.toggle('draw-open')
+})
+
+// dropdown drawer
+const dropdown = document.querySelectorAll('.dropdown')
+Array.from(dropdown).forEach(element => {
+    element.addEventListener('click', () => {
+        console.log(element.parentNode)
+        element.parentNode.querySelector('.dropdown-content').classList.toggle('hidden')
+    })
+})
