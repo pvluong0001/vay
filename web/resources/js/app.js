@@ -29,3 +29,8 @@ new Swiper('.knowledge-slide', {
 
 // tab
 window.initTab();
+window.log = (type, message = '') => {
+    console.group(`[${type}]`)
+    console.log(message);
+    console.groupEnd();
+}

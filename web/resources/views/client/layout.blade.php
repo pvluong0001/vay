@@ -208,5 +208,6 @@
 <!-- end modal -->
 
 <script src="{{ mix('js/app.js') }}"></script>
+@stack('after_scripts')
 </body>
 </html>
