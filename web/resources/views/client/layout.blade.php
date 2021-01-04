@@ -13,7 +13,7 @@
 </head>
 <body>
 <!-- top info -->
-<div id="top-info" class="bg-gray-200 py-2">
+<div id="top-info" class="bg-gray-200 py-2 hidden md:block">
     <div class="container flex justify-end items-center">
         <div>
             <i class="far fa-envelope text-gray-400"></i> test@email.com
@@ -47,12 +47,11 @@
                 @foreach($cats as $cat)
                     <li><a href="{{ route('category', ['category' => $cat->slug]) }}">{{ $cat->name }}</a></li>
                 @endforeach
-                <li><a href="#">Cầm đồ online</a></li>
                 <li class="relative">
                     Kiến thức vay
                     <ul class="sub-menu">
                         @foreach($types as $type)
-                        <li><a href="{{ route('type', ['type' => $type->slug]) }}">{{ $type->name }}</a></li>
+                            <li><a href="{{ route('type', ['type' => $type->slug]) }}">{{ $type->name }}</a></li>
                         @endforeach
                     </ul>
                 </li>
@@ -60,12 +59,15 @@
             </ul>
         </div>
         <div class="ml-auto">
-            <button class="flex-shrink-0 bg-green-500 text-white text-base font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-green-600"
-                    type="button">
+            <button
+                class="flex-shrink-0 bg-green-500 text-white text-base font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-green-600"
+                type="button">
                 Đăng ký tư vấn
             </button>
         </div>
     </div>
+
+    @include('client.particles.drawer')
 </div>
 <!-- end menu -->
 
@@ -174,10 +176,12 @@
 
     <div class="modal-container fixed w-full h-full z-50 overflow-y-auto ">
 
-        <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-black text-sm z-50">
+        <div
+            class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-black text-sm z-50">
             <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                  viewBox="0 0 18 18">
-                <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+                <path
+                    d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
             </svg>
             (Esc)
         </div>
@@ -195,7 +199,8 @@
 
             <!--Footer-->
             <div class="flex justify-end pt-2">
-                <button class="px-4 bg-transparent p-3 rounded-lg text-indigo-500 hover:bg-gray-100 hover:text-indigo-400 mr-2">
+                <button
+                    class="px-4 bg-transparent p-3 rounded-lg text-indigo-500 hover:bg-gray-100 hover:text-indigo-400 mr-2">
                     Action
                 </button>
                 <button class="modal-close px-4 bg-indigo-500 p-3 rounded-lg text-white hover:bg-indigo-400">Close
