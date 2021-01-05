@@ -9,6 +9,8 @@ services:
       context:
         docker/web
       dockerfile: Dockerfile
+    tty: true
+    stdin_open: true
     restart: unless-stopped
     working_dir: /var/www/
     volumes:
