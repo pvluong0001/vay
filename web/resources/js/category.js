@@ -7,17 +7,19 @@
     }
 
     Array.from(anchors).forEach(element => {
-        const anchorElement = document.createElement('div');
-        anchorElement.innerText = element.dataset.label;
-        anchorElement.className = 'main-button cursor-pointer';
+        if(element.dataset.label) {
+            const anchorElement = document.createElement('div');
+            anchorElement.innerText = element.dataset.label;
+            anchorElement.className = 'main-button cursor-pointer';
 
-        // add event
-        anchorElement.addEventListener('click', () => {
-            element.scrollIntoView({
-                behavior: 'smooth'
+            // add event
+            anchorElement.addEventListener('click', () => {
+                element.scrollIntoView({
+                    behavior: 'smooth'
+                })
             })
-        })
 
-        area.appendChild(anchorElement);
+            area.appendChild(anchorElement);
+        }
     });
 })(document);

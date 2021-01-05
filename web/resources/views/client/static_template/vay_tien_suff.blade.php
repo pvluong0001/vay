@@ -215,14 +215,56 @@
 
 <x-block title="FAQ">
     <div class="flex flex-col gap-3 text-green-500">
-        <div class="bg-gray-200 rounded-md">
-            <div class="flex justify-between text-lg font-bold px-6 py-4 faq-title relative">
+        <div class="bg-gray-100 rounded-md">
+            <div class="flex justify-between text-lg font-bold px-6 py-4 faq-title relative cursor-pointer">
                 <span>Vay tiền nhanh online là gì?</span>
             </div>
-            <p class="px-6 py-4">
+            <p class="px-6 py-4 faq-content hidden border-t border-gray-300">
                 Vay tiền nhanh/ vay tiền online hay vay tiền trực tuyến là hình thức vay tín chấp chỉ cần CMND/ thẻ CCCD, số điện thoại, số tài khoản ngân hàng với thời gian giải ngân nhanh trong vòng 5 phút tới 24 giờ.
             </p>
         </div>
-        <div>2</div>
+        <div class="bg-gray-100 rounded-md">
+            <div class="flex justify-between text-lg font-bold px-6 py-4 faq-title relative cursor-pointer">
+                <span>Vay tiền nhanh online là gì?</span>
+            </div>
+            <p class="px-6 py-4 faq-content hidden border-t border-gray-300">
+                Vay tiền nhanh/ vay tiền online hay vay tiền trực tuyến là hình thức vay tín chấp chỉ cần CMND/ thẻ CCCD, số điện thoại, số tài khoản ngân hàng với thời gian giải ngân nhanh trong vòng 5 phút tới 24 giờ.
+            </p>
+        </div>
+        <div class="bg-gray-100 rounded-md">
+            <div class="flex justify-between text-lg font-bold px-6 py-4 faq-title relative cursor-pointer">
+                <span>Vay tiền nhanh online là gì?</span>
+            </div>
+            <p class="px-6 py-4 faq-content hidden border-t border-gray-300">
+                Vay tiền nhanh/ vay tiền online hay vay tiền trực tuyến là hình thức vay tín chấp chỉ cần CMND/ thẻ CCCD, số điện thoại, số tài khoản ngân hàng với thời gian giải ngân nhanh trong vòng 5 phút tới 24 giờ.
+            </p>
+        </div>
+        <div class="bg-gray-100 rounded-md">
+            <div class="flex justify-between text-lg font-bold px-6 py-4 faq-title relative cursor-pointer">
+                <span>Vay tiền nhanh online là gì?</span>
+            </div>
+            <p class="px-6 py-4 faq-content hidden border-t border-gray-300">
+                Vay tiền nhanh/ vay tiền online hay vay tiền trực tuyến là hình thức vay tín chấp chỉ cần CMND/ thẻ CCCD, số điện thoại, số tài khoản ngân hàng với thời gian giải ngân nhanh trong vòng 5 phút tới 24 giờ.
+            </p>
+        </div>
+        <div class="bg-gray-100 rounded-md">
+            <div class="flex justify-between text-lg font-bold px-6 py-4 faq-title relative cursor-pointer">
+                <span>Vay tiền nhanh online là gì?</span>
+            </div>
+            <p class="px-6 py-4 faq-content hidden border-t border-gray-300">
+                Vay tiền nhanh/ vay tiền online hay vay tiền trực tuyến là hình thức vay tín chấp chỉ cần CMND/ thẻ CCCD, số điện thoại, số tài khoản ngân hàng với thời gian giải ngân nhanh trong vòng 5 phút tới 24 giờ.
+            </p>
+        </div>
+    </div>
+</x-block>
+
+<x-block class="pt-0">
+    <div class="bg-gray-100 rounded-md flex flex-col gap-10 p-10">
+        <p>
+            Vaytienonline123 là website tư vấn tài chính & so sánh sản phẩm vay online giúp khách hàng tiếp cận khoản vay một cách dễ dàng hơn. Trang web không phải là tổ chức tài chính, ngân hàng hay đơn vị cung cấp dịch vụ cho vay. Chúng tôi tập hợp các khoản vay từ những công ty cung cấp dịch vụ tài chính đã được cấp phép và gợi ý các khoản vay tốt nhất, phù hợp nhất với nhu cầu của khách hàng.
+        </p>
+        <p>
+            Vaytienonline123 là website tư vấn tài chính & so sánh sản phẩm vay online giúp khách hàng tiếp cận khoản vay một cách dễ dàng hơn. Trang web không phải là tổ chức tài chính, ngân hàng hay đơn vị cung cấp dịch vụ cho vay. Chúng tôi tập hợp các khoản vay từ những công ty cung cấp dịch vụ tài chính đã được cấp phép và gợi ý các khoản vay tốt nhất, phù hợp nhất với nhu cầu của khách hàng.
+        </p>
     </div>
 </x-block>

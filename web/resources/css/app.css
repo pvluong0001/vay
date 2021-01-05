@@ -235,8 +235,8 @@ body.modal-active {
     content: "";
     background: url(//thachpham.com/chevron-down-black.svg) no-repeat right center;
     position: absolute;
-    right: theme('spacing[2]');
-    top: theme('spacing[2]');
+    right: theme('spacing[4]');
+    top: theme('spacing[6]');
     z-index: 1;
     width: 10px;
     height: 10px;
@@ -246,4 +246,8 @@ body.modal-active {
     -o-transform: rotate(0deg);
     transform: rotate(0deg);
     transition: all .3s;
+}
+
+.img-icon {
+    width: 77px;
 }

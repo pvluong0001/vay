@@ -2,6 +2,7 @@
 import Swiper, {Pagination} from 'swiper';
 require('./modal');
 require('./tab');
+require('./faq');
 
 Swiper.use([Pagination]);
 // import Swiper styles
@@ -59,7 +60,6 @@ layer.addEventListener('click', () => {
 const dropdown = document.querySelectorAll('.dropdown')
 Array.from(dropdown).forEach(element => {
     element.addEventListener('click', () => {
-        console.log(element.parentNode)
         element.parentNode.querySelector('.dropdown-content').classList.toggle('hidden')
     })
 })
