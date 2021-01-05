@@ -191,6 +191,10 @@ body.modal-active {
     @apply -translate-x-full;
 }
 
+.drawer a.active {
+    @apply bg-green-500 text-white;
+}
+
 .draw-open {
     @apply translate-x-0;
 }

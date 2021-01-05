@@ -44,21 +44,21 @@
         </div>
         <div class="px-4 flex-1 hidden md:block">
             <ul class="flex gap-4 font-bold">
-                <li class="active">
+                <li {{ menu('/') }}>
                     <a href="#">Trang chủ</a>
                 </li>
                 @foreach($cats as $cat)
-                    <li><a href="{{ route('category', ['category' => $cat->slug]) }}">{{ $cat->name }}</a></li>
+                    <li {{ menu(getPathFromUrl(route('category', ['category' => $cat->slug]))) }}><a href="{{ route('category', ['category' => $cat->slug]) }}">{{ $cat->name }}</a></li>
                 @endforeach
                 <li class="relative">
                     Kiến thức vay
                     <ul class="sub-menu">
                         @foreach($types as $type)
-                            <li><a href="{{ route('type', ['type' => $type->slug]) }}">{{ $type->name }}</a></li>
+                            <li {{ menu(getPathFromUrl(route('type', ['type' => $type->slug]))) }}><a href="{{ route('type', ['type' => $type->slug]) }}">{{ $type->name }}</a></li>
                         @endforeach
                     </ul>
                 </li>
-                <li><a href="{{ route('about') }}">Về chúng tôi</a></li>
+                <li {{ menu(getPathFromUrl(route('about'))) }}><a href="{{ route('about') }}">Về chúng tôi</a></li>
             </ul>
         </div>
         <div

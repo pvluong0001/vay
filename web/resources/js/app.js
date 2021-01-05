@@ -3,6 +3,7 @@ import Swiper, {Pagination} from 'swiper';
 require('./modal');
 require('./tab');
 require('./faq');
+require('./menu');
 
 Swiper.use([Pagination]);
 // import Swiper styles
