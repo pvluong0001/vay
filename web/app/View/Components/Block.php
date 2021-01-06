@@ -9,6 +9,7 @@ class Block extends Component
     public $class;
     public $subtitle;
     public $title;
+    public $hiddenSubtitle;
 
     /**
      * Create a new component instance.
@@ -16,12 +17,14 @@ class Block extends Component
      * @param string $class
      * @param string $subtitle
      * @param string $title
+     * @param bool $hiddenSubtitle
      */
-    public function __construct(string $class = '', string $subtitle = '', string $title = '')
+    public function __construct(string $class = '', string $subtitle = '', string $title = '', $hiddenSubtitle = false)
     {
         $this->class = $class;
         $this->subtitle = $subtitle;
         $this->title = $title;
+        $this->hiddenSubtitle = $hiddenSubtitle;
     }
 
     /**

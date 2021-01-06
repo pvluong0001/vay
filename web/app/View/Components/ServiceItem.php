@@ -8,17 +8,20 @@ class ServiceItem extends Component
 {
     public $title;
     public $desc;
+    public $class;
 
     /**
      * Create a new component instance.
      *
      * @param string $title
      * @param string $desc
+     * @param string $class
      */
-    public function __construct(string $title, string $desc = '')
+    public function __construct(string $title, string $desc = '', $class = '')
     {
         $this->title = $title;
         $this->desc = $desc;
+        $this->class = $class;
     }
 
     /**

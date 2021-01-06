@@ -4,7 +4,7 @@
     <!-- slide -->
     <!-- Slider main container -->
     <!-- Swiper -->
-    <div class="swiper-container">
+    <div class="swiper-container hidden md:block">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <img src="assets/banner.jpg" alt="">
@@ -20,35 +20,35 @@
     <!-- slide -->
 
     <!-- service -->
-    <x-block class="light-blue pb-0">
+    <x-block class="light-blue pb-0" :hiddenSubtitle="true">
         <x-slot name="title">
             Vay online trả góp hấp dẫn - Tư vấn vay miễn phí
         </x-slot>
         <x-slot name="subtitle">
             Mang các sản phẩm <span class="highlight">vay online an toàn</span> đến từ ngân hàng và công ty tài chính khác nhau tới khách hàng. Vaytienonline123 cung cấp rất nhiều gói <b>vay tiền cấp tốc</b> cực uy tín dưới nhiều hình thức vay đa dạng để khách hàng lựa chọn như: <b>Vay online bằng CMND, sổ hộ khẩu; vay online bằng sim viettel; vay online bằng lái xe...</b> Các thông tin về <b>khoản vay online</b> trên web là hoàn toàn chính xác, rõ ràng và trực quan để người vay tiền có thể so sánh và lựa chọn ra gói vay thích hợp với nhu cầu tài chính của mình. Nếu có bất kì thắc mắc nào về <b>vay tiền online</b>, các bạn có thể nhắn tin với tư vấn viên của chúng tôi để được tư vấn online hoàn toàn miễn phí 24/7.
         </x-slot>
-        <div class="services flex mt-10">
-            <div class="flex-1 flex flex-col items-center p-4 hover:bg-white border-b-2 cursor-pointer hover:border-b-2 hover:border-blue-700 pb-6">
+        <div class="services grid md:grid-cols-6 grid-cols-2 gap-7 md:gap-0 mt-10 pb-10 md:pb-0">
+            <div class="flex-1 flex flex-col bg-white md:bg-transparent items-center p-4 hover:bg-white border-b-2 cursor-pointer hover:border-b-2 hover:border-blue-700 pb-6">
                 <img src="assets/service.png" style="width: 60px;" alt="">
                 <span class="mt-2 text-xl font-bold">Vay tiền nhanh</span>
             </div>
-            <div class="flex-1 flex flex-col items-center p-4 hover:bg-white border-b-2 cursor-pointer hover:border-b-2 hover:border-blue-700 pb-6">
+            <div class="flex-1 flex flex-col bg-white md:bg-transparent items-center p-4 hover:bg-white border-b-2 cursor-pointer hover:border-b-2 hover:border-blue-700 pb-6">
                 <img src="assets/service.png" style="width: 60px;" alt="">
                 <span class="mt-2 text-xl font-bold">Cầm đồ</span>
             </div>
-            <div class="flex-1 flex flex-col items-center p-4 hover:bg-white border-b-2 cursor-pointer hover:border-b-2 hover:border-blue-700 pb-6">
+            <div class="flex-1 flex flex-col bg-white md:bg-transparent items-center p-4 hover:bg-white border-b-2 cursor-pointer hover:border-b-2 hover:border-blue-700 pb-6">
                 <img src="assets/service.png" style="width: 60px;" alt="">
                 <span class="mt-2 text-xl font-bold">Vay tín chấp</span>
             </div>
-            <div class="flex-1 flex flex-col items-center p-4 hover:bg-white border-b-2 cursor-pointer hover:border-b-2 hover:border-blue-700 pb-6">
+            <div class="flex-1 flex flex-col bg-white md:bg-transparent items-center p-4 hover:bg-white border-b-2 cursor-pointer hover:border-b-2 hover:border-blue-700 pb-6">
                 <img src="assets/service.png" style="width: 60px;" alt="">
                 <span class="mt-2 text-xl font-bold">Thẻ tín dụng</span>
             </div>
-            <div class="flex-1 flex flex-col items-center p-4 hover:bg-white border-b-2 cursor-pointer hover:border-b-2 hover:border-blue-700 pb-6">
+            <div class="flex-1 flex flex-col bg-white md:bg-transparent items-center p-4 hover:bg-white border-b-2 cursor-pointer hover:border-b-2 hover:border-blue-700 pb-6">
                 <img src="assets/service.png" style="width: 60px;" alt="">
                 <span class="mt-2 text-xl font-bold">Vay mua xe</span>
             </div>
-            <div class="flex-1 flex flex-col items-center p-4 hover:bg-white border-b-2 cursor-pointer hover:border-b-2 hover:border-blue-700 pb-6">
+            <div class="flex-1 flex flex-col bg-white md:bg-transparent items-center p-4 hover:bg-white border-b-2 cursor-pointer hover:border-b-2 hover:border-blue-700 pb-6">
                 <img src="assets/service.png" style="width: 60px;" alt="">
                 <span class="mt-2 text-xl font-bold">Vay mua nhà</span>
             </div>
@@ -57,15 +57,15 @@
     <!-- service -->
 
     <!-- guide -->
-    <x-block class="guide">
+    <x-block class="guide" :hiddenSubtitle="true">
         <x-slot name="title">
             Sử dụng hiệu quả <span class="highlight">Vay Tiền Online 123</span> để nhận được tiền vay nhanh nhất
         </x-slot>
         <x-slot name="subtitle">
             Chỉ với 3 thao tác đơn giản trên điện thoại hoặc máy tính, bạn đã có thể tìm và lựa chọn <span class="highlight">khoản vay online</span> mình cần với <b>Vaytienonline123.com</b>. Sau khi đã có sản phẩm vay phù hợp, bạn đăng kí thông tin của mình với gói vay đó để hoàn tất thủ tục <b>vay online không cần gặp mặt</b> và chờ tiền được gửi về tài khoản thôi. Hãy sử dụng khoản <b>vay online</b> hợp lý nhé!
         </x-slot>
-        <div class="steps flex gap-4 mt-10">
-            <div class="flex-1 shadow-md hover:shadow-xl flex flex-col items-center p-3 cursor-pointer">
+        <div class="steps grid md:grid-cols-3 gap-10 mt-10">
+            <div class="flex-1 shadow-xl hover:shadow-2xl flex flex-col items-center p-3 cursor-pointer">
                 <div style="width: 77px;">
                     <svg style="width: 100%; height: 100%;" xmlns="http://www.w3.org/2000/svg" id="Layer_3"
                          enable-background="new 0 0 64 64"
@@ -99,7 +99,7 @@
                     Xem xét hết tất cả các sản phẩm <b>vay online như vay online chỉ cần CMND, vay tín chấp</b> hay <b>vay mua nhà, vay mua xe</b>, cầm đồ...Đâu là gói vay mà bạn cần hiện tại.
                 </p>
             </div>
-            <div class="flex-1 shadow-md hover:shadow-xl flex flex-col items-center p-3 cursor-pointer">
+            <div class="flex-1 shadow-xl hover:shadow-2xl flex flex-col items-center p-3 cursor-pointer">
                 <div style="width: 77px;">
                     <svg style="width: 100%; height: 100%;" xmlns="http://www.w3.org/2000/svg" id="Layer_3"
                          enable-background="new 0 0 64 64"
@@ -133,7 +133,7 @@
                     So sánh các sản phẩm vay online từ ngân hàng, công ty tài chính được gợi ý trên <b>Vay Tiền Online 123</b>. Chọn ra gói vay online phù hợp nhất với bạn dựa trên lãi suất vay, điều kiện vay, hạn mức vay....
                 </p>
             </div>
-            <div class="flex-1 shadow-md hover:shadow-xl flex flex-col items-center p-3 cursor-pointer">
+            <div class="flex-1 shadow-xl hover:shadow-2xl flex flex-col items-center p-3 cursor-pointer">
                 <div style="width: 77px;">
                     <svg style="width: 100%; height: 100%;" xmlns="http://www.w3.org/2000/svg" id="Layer_3"
                          enable-background="new 0 0 64 64"
@@ -187,7 +187,7 @@
         </div>
         @foreach($categories as $category)
             <div data-tab="{{ $category->slug }}" class="tab-content">
-                <div class="mt-6 grid grid-cols-3 gap-10">
+                <div class="mt-6 grid sm:grid-cols-2 md:grid-cols-3 gap-10">
                     @foreach($category->packages as $index => $package)
                         <x-package-item :package="$package" :index="$index"/>
                     @endforeach
@@ -208,73 +208,75 @@
         <x-slot name="title">
             Với nền tảng Vay tiền online 123 bạn được trải nghiệm những gì?
         </x-slot>
-        <div class="flex mt-16 gap-5">
-            <x-service-item title="Hoàn toàn miễn phí">
-                <x-slot name="desc">
-                    Cung cấp thông tin về các gói <b>vay online</b>, so sánh các gói vay, tư vấn đăng kí vay hoàn toàn không mất phí. Giao diện rõ ràng, dễ sử dụng
-                </x-slot>
-                <x-slot name="image">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                         id="Layer_1" x="0px" y="0px" viewBox="0 0 469.333 469.333"
-                         style="enable-background:new 0 0 469.333 469.333;" xml:space="preserve" width="512px"
-                         height="512px" class="svg-icon"><g><g> <g> <g> <path
-                                            d="M451.125,222.708L250.292,21.875C236.396,7.979,217.167,0,197.5,0H42.667C19.146,0,0,19.135,0,42.667V197.49     c0,19.938,7.771,38.688,21.875,52.802l200.833,200.833c11.75,11.74,27.375,18.208,43.958,18.208s32.208-6.469,43.958-18.208     l140.5-140.5c11.75-11.729,18.208-27.344,18.208-43.958S462.875,234.437,451.125,222.708z M436.042,295.542l-140.5,140.5     c-15.458,15.417-42.292,15.417-57.75,0L36.958,235.208c-10.083-10.083-15.625-23.479-15.625-37.719V42.667     c0-11.76,9.563-21.333,21.333-21.333H197.5c14.042,0,27.792,5.698,37.708,15.625l200.833,200.833     C443.75,245.5,448,255.75,448,266.667C448,277.583,443.75,287.833,436.042,295.542z"
-                                            data-original="#000000" class="active-path" data-old_color="#000000" fill="#4ABA48"></path>
-                                        <path d="M251.271,266.354c2.083,2.083,4.812,3.125,7.542,3.125c2.729,0,5.458-1.042,7.542-3.125     c4.167-4.167,4.167-10.917,0-15.083l-15.087-15.087l15.087-15.09l22.625,22.635c4.167,4.167,10.917,4.167,15.083,0     c4.167-4.167,4.167-10.917,0-15.083l-30.167-30.177c-2-2-4.708-3.125-7.542-3.125s-5.542,1.125-7.542,3.125l-60.333,60.344     c-4.167,4.167-4.167,10.917,0,15.083l30.167,30.167c2.083,2.083,4.813,3.125,7.542,3.125c2.729,0,5.458-1.042,7.542-3.125     c4.167-4.167,4.167-10.917,0-15.083l-22.625-22.625l15.082-15.085L251.271,266.354z"
-                                              data-original="#000000" class="active-path" data-old_color="#000000" fill="#4ABA48"></path>
-                                        <path d="M334.229,258.812c-4.167-4.167-10.917-4.167-15.083,0l-60.333,60.333c-4.167,4.167-4.167,10.917,0,15.083l30.167,30.177     c2.083,2.083,4.813,3.125,7.542,3.125c2.729,0,5.458-1.042,7.542-3.125c4.167-4.167,4.167-10.917,0-15.083l-22.625-22.635     l15.083-15.083l15.083,15.083c2.083,2.083,4.813,3.125,7.542,3.125s5.458-1.042,7.542-3.125c4.167-4.167,4.167-10.917,0-15.083     l-15.083-15.083l15.083-15.083l22.625,22.625c4.167,4.167,10.917,4.167,15.083,0c4.167-4.167,4.167-10.917,0-15.083     L334.229,258.812z"
-                                              data-original="#000000" class="active-path" data-old_color="#000000" fill="#4ABA48"></path>
-                                        <path d="M145.667,145.677c4.167-4.167,4.167-10.917,0-15.083l-15.083-15.091l15.083-15.086l22.625,22.625     c4.167,4.167,10.917,4.167,15.083,0c4.167-4.167,4.167-10.917,0-15.083l-30.167-30.167c-4-4-11.083-4-15.083,0l-30.151,30.156     c0,0-0.01,0.005-0.016,0.01c-0.005,0.005-0.005,0.01-0.005,0.01l-30.161,30.167c-4.167,4.167-4.167,10.917,0,15.083     c2.083,2.083,4.813,3.125,7.542,3.125c2.729,0,5.458-1.042,7.542-3.125l22.626-22.63l15.082,15.089     c2.083,2.083,4.813,3.125,7.542,3.125C140.854,148.802,143.583,147.76,145.667,145.677z"
-                                              data-original="#000000" class="active-path" data-old_color="#000000" fill="#4ABA48"></path>
-                                        <path d="M207.771,207.792c7.896-0.417,15.25-3.698,20.875-9.323c12.479-12.479,12.479-32.771,0-45.25l-15.083-15.083     c-4.167-4.167-10.917-4.167-15.083,0l-29.896,29.885c-0.104,0.094-0.208,0.188-0.292,0.281c-0.104,0.094-0.188,0.188-0.271,0.292     l-29.896,29.875c-4.167,4.167-4.167,10.917,0,15.083c4.167,4.167,10.917,4.167,15.083,0l22.625-22.625l7.563,7.531     c4.146,4.167,4.146,10.938,0,15.094l-15.104,15.094c-4.167,4.156-4.167,10.917,0,15.083c2.083,2.083,4.813,3.125,7.542,3.125     c2.729,0,5.458-1.042,7.542-3.125l15.104-15.094C204.25,222.854,207.354,215.385,207.771,207.792z M206.021,160.76l7.542,7.542     c4.167,4.156,4.167,10.927,0,15.083c-2.021,2.01-4.688,3.125-7.542,3.125H206c-2.833,0-5.5-1.104-7.521-3.135l-7.542-7.531     L206.021,160.76z"
-                                              data-original="#000000" class="active-path" data-old_color="#000000"
-                                              fill="#4ABA48"></path> </g> </g> </g></g> </svg>
-                </x-slot>
-            </x-service-item>
-            <x-service-item title="Cập nhật liên tục">
-                <x-slot name="desc">
-                    Các sản phẩm <b>vay online</b> được cập nhật liên tục mỗi giờ bao gồm cả các khuyến mãi dành cho người lần đầu vay, hay lãi suất trả góp 0%....
-                </x-slot>
-                <x-slot name="image">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                         id="Layer_1" x="0px" y="0px" viewBox="0 0 469.333 469.333"
-                         style="enable-background:new 0 0 469.333 469.333;" xml:space="preserve" width="512px"
-                         height="512px" class="svg-icon"><g><g> <g> <g> <path
-                                            d="M451.125,222.708L250.292,21.875C236.396,7.979,217.167,0,197.5,0H42.667C19.146,0,0,19.135,0,42.667V197.49     c0,19.938,7.771,38.688,21.875,52.802l200.833,200.833c11.75,11.74,27.375,18.208,43.958,18.208s32.208-6.469,43.958-18.208     l140.5-140.5c11.75-11.729,18.208-27.344,18.208-43.958S462.875,234.437,451.125,222.708z M436.042,295.542l-140.5,140.5     c-15.458,15.417-42.292,15.417-57.75,0L36.958,235.208c-10.083-10.083-15.625-23.479-15.625-37.719V42.667     c0-11.76,9.563-21.333,21.333-21.333H197.5c14.042,0,27.792,5.698,37.708,15.625l200.833,200.833     C443.75,245.5,448,255.75,448,266.667C448,277.583,443.75,287.833,436.042,295.542z"
-                                            data-original="#000000" class="active-path" data-old_color="#000000" fill="#4ABA48"></path>
-                                        <path d="M251.271,266.354c2.083,2.083,4.812,3.125,7.542,3.125c2.729,0,5.458-1.042,7.542-3.125     c4.167-4.167,4.167-10.917,0-15.083l-15.087-15.087l15.087-15.09l22.625,22.635c4.167,4.167,10.917,4.167,15.083,0     c4.167-4.167,4.167-10.917,0-15.083l-30.167-30.177c-2-2-4.708-3.125-7.542-3.125s-5.542,1.125-7.542,3.125l-60.333,60.344     c-4.167,4.167-4.167,10.917,0,15.083l30.167,30.167c2.083,2.083,4.813,3.125,7.542,3.125c2.729,0,5.458-1.042,7.542-3.125     c4.167-4.167,4.167-10.917,0-15.083l-22.625-22.625l15.082-15.085L251.271,266.354z"
-                                              data-original="#000000" class="active-path" data-old_color="#000000" fill="#4ABA48"></path>
-                                        <path d="M334.229,258.812c-4.167-4.167-10.917-4.167-15.083,0l-60.333,60.333c-4.167,4.167-4.167,10.917,0,15.083l30.167,30.177     c2.083,2.083,4.813,3.125,7.542,3.125c2.729,0,5.458-1.042,7.542-3.125c4.167-4.167,4.167-10.917,0-15.083l-22.625-22.635     l15.083-15.083l15.083,15.083c2.083,2.083,4.813,3.125,7.542,3.125s5.458-1.042,7.542-3.125c4.167-4.167,4.167-10.917,0-15.083     l-15.083-15.083l15.083-15.083l22.625,22.625c4.167,4.167,10.917,4.167,15.083,0c4.167-4.167,4.167-10.917,0-15.083     L334.229,258.812z"
-                                              data-original="#000000" class="active-path" data-old_color="#000000" fill="#4ABA48"></path>
-                                        <path d="M145.667,145.677c4.167-4.167,4.167-10.917,0-15.083l-15.083-15.091l15.083-15.086l22.625,22.625     c4.167,4.167,10.917,4.167,15.083,0c4.167-4.167,4.167-10.917,0-15.083l-30.167-30.167c-4-4-11.083-4-15.083,0l-30.151,30.156     c0,0-0.01,0.005-0.016,0.01c-0.005,0.005-0.005,0.01-0.005,0.01l-30.161,30.167c-4.167,4.167-4.167,10.917,0,15.083     c2.083,2.083,4.813,3.125,7.542,3.125c2.729,0,5.458-1.042,7.542-3.125l22.626-22.63l15.082,15.089     c2.083,2.083,4.813,3.125,7.542,3.125C140.854,148.802,143.583,147.76,145.667,145.677z"
-                                              data-original="#000000" class="active-path" data-old_color="#000000" fill="#4ABA48"></path>
-                                        <path d="M207.771,207.792c7.896-0.417,15.25-3.698,20.875-9.323c12.479-12.479,12.479-32.771,0-45.25l-15.083-15.083     c-4.167-4.167-10.917-4.167-15.083,0l-29.896,29.885c-0.104,0.094-0.208,0.188-0.292,0.281c-0.104,0.094-0.188,0.188-0.271,0.292     l-29.896,29.875c-4.167,4.167-4.167,10.917,0,15.083c4.167,4.167,10.917,4.167,15.083,0l22.625-22.625l7.563,7.531     c4.146,4.167,4.146,10.938,0,15.094l-15.104,15.094c-4.167,4.156-4.167,10.917,0,15.083c2.083,2.083,4.813,3.125,7.542,3.125     c2.729,0,5.458-1.042,7.542-3.125l15.104-15.094C204.25,222.854,207.354,215.385,207.771,207.792z M206.021,160.76l7.542,7.542     c4.167,4.156,4.167,10.927,0,15.083c-2.021,2.01-4.688,3.125-7.542,3.125H206c-2.833,0-5.5-1.104-7.521-3.135l-7.542-7.531     L206.021,160.76z"
-                                              data-original="#000000" class="active-path" data-old_color="#000000"
-                                              fill="#4ABA48"></path> </g> </g> </g></g> </svg>
-                </x-slot>
-            </x-service-item>
-            <x-service-item title="Chuyên nghiệp tuyệt đối">
-                <x-slot name="desc">
-                    Đội ngũ tư vấn viên nhiệt tình, nhiều kinh nghiệm và có trách nhiệm, luôn luôn túc trực 24/7 để giải đáp các thắc mắc trong quá trình tìm thông tin về gói vay hay đăng kí vay online của khách hàng. Sự chuyên nghiệp của <b>Vay tiền online 123</b> chưa bao giờ làm khách hàng thất vọng
-                </x-slot>
-                <x-slot name="image">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                         id="Layer_1" x="0px" y="0px" viewBox="0 0 469.333 469.333"
-                         style="enable-background:new 0 0 469.333 469.333;" xml:space="preserve" width="512px"
-                         height="512px" class="svg-icon"><g><g> <g> <g> <path
-                                            d="M451.125,222.708L250.292,21.875C236.396,7.979,217.167,0,197.5,0H42.667C19.146,0,0,19.135,0,42.667V197.49     c0,19.938,7.771,38.688,21.875,52.802l200.833,200.833c11.75,11.74,27.375,18.208,43.958,18.208s32.208-6.469,43.958-18.208     l140.5-140.5c11.75-11.729,18.208-27.344,18.208-43.958S462.875,234.437,451.125,222.708z M436.042,295.542l-140.5,140.5     c-15.458,15.417-42.292,15.417-57.75,0L36.958,235.208c-10.083-10.083-15.625-23.479-15.625-37.719V42.667     c0-11.76,9.563-21.333,21.333-21.333H197.5c14.042,0,27.792,5.698,37.708,15.625l200.833,200.833     C443.75,245.5,448,255.75,448,266.667C448,277.583,443.75,287.833,436.042,295.542z"
-                                            data-original="#000000" class="active-path" data-old_color="#000000" fill="#4ABA48"></path>
-                                        <path d="M251.271,266.354c2.083,2.083,4.812,3.125,7.542,3.125c2.729,0,5.458-1.042,7.542-3.125     c4.167-4.167,4.167-10.917,0-15.083l-15.087-15.087l15.087-15.09l22.625,22.635c4.167,4.167,10.917,4.167,15.083,0     c4.167-4.167,4.167-10.917,0-15.083l-30.167-30.177c-2-2-4.708-3.125-7.542-3.125s-5.542,1.125-7.542,3.125l-60.333,60.344     c-4.167,4.167-4.167,10.917,0,15.083l30.167,30.167c2.083,2.083,4.813,3.125,7.542,3.125c2.729,0,5.458-1.042,7.542-3.125     c4.167-4.167,4.167-10.917,0-15.083l-22.625-22.625l15.082-15.085L251.271,266.354z"
-                                              data-original="#000000" class="active-path" data-old_color="#000000" fill="#4ABA48"></path>
-                                        <path d="M334.229,258.812c-4.167-4.167-10.917-4.167-15.083,0l-60.333,60.333c-4.167,4.167-4.167,10.917,0,15.083l30.167,30.177     c2.083,2.083,4.813,3.125,7.542,3.125c2.729,0,5.458-1.042,7.542-3.125c4.167-4.167,4.167-10.917,0-15.083l-22.625-22.635     l15.083-15.083l15.083,15.083c2.083,2.083,4.813,3.125,7.542,3.125s5.458-1.042,7.542-3.125c4.167-4.167,4.167-10.917,0-15.083     l-15.083-15.083l15.083-15.083l22.625,22.625c4.167,4.167,10.917,4.167,15.083,0c4.167-4.167,4.167-10.917,0-15.083     L334.229,258.812z"
-                                              data-original="#000000" class="active-path" data-old_color="#000000" fill="#4ABA48"></path>
-                                        <path d="M145.667,145.677c4.167-4.167,4.167-10.917,0-15.083l-15.083-15.091l15.083-15.086l22.625,22.625     c4.167,4.167,10.917,4.167,15.083,0c4.167-4.167,4.167-10.917,0-15.083l-30.167-30.167c-4-4-11.083-4-15.083,0l-30.151,30.156     c0,0-0.01,0.005-0.016,0.01c-0.005,0.005-0.005,0.01-0.005,0.01l-30.161,30.167c-4.167,4.167-4.167,10.917,0,15.083     c2.083,2.083,4.813,3.125,7.542,3.125c2.729,0,5.458-1.042,7.542-3.125l22.626-22.63l15.082,15.089     c2.083,2.083,4.813,3.125,7.542,3.125C140.854,148.802,143.583,147.76,145.667,145.677z"
-                                              data-original="#000000" class="active-path" data-old_color="#000000" fill="#4ABA48"></path>
-                                        <path d="M207.771,207.792c7.896-0.417,15.25-3.698,20.875-9.323c12.479-12.479,12.479-32.771,0-45.25l-15.083-15.083     c-4.167-4.167-10.917-4.167-15.083,0l-29.896,29.885c-0.104,0.094-0.208,0.188-0.292,0.281c-0.104,0.094-0.188,0.188-0.271,0.292     l-29.896,29.875c-4.167,4.167-4.167,10.917,0,15.083c4.167,4.167,10.917,4.167,15.083,0l22.625-22.625l7.563,7.531     c4.146,4.167,4.146,10.938,0,15.094l-15.104,15.094c-4.167,4.156-4.167,10.917,0,15.083c2.083,2.083,4.813,3.125,7.542,3.125     c2.729,0,5.458-1.042,7.542-3.125l15.104-15.094C204.25,222.854,207.354,215.385,207.771,207.792z M206.021,160.76l7.542,7.542     c4.167,4.156,4.167,10.927,0,15.083c-2.021,2.01-4.688,3.125-7.542,3.125H206c-2.833,0-5.5-1.104-7.521-3.135l-7.542-7.531     L206.021,160.76z"
-                                              data-original="#000000" class="active-path" data-old_color="#000000"
-                                              fill="#4ABA48"></path> </g> </g> </g></g> </svg>
-                </x-slot>
-            </x-service-item>
+        <div data-type="slideable" class="overflow-hidden">
+            <div class="grid md:grid-cols-3 mt-16 gap-5">
+                <x-service-item title="Hoàn toàn miễn phí">
+                    <x-slot name="desc">
+                        Cung cấp thông tin về các gói <b>vay online</b>, so sánh các gói vay, tư vấn đăng kí vay hoàn toàn không mất phí. Giao diện rõ ràng, dễ sử dụng
+                    </x-slot>
+                    <x-slot name="image">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                             id="Layer_1" x="0px" y="0px" viewBox="0 0 469.333 469.333"
+                             style="enable-background:new 0 0 469.333 469.333;" xml:space="preserve" width="512px"
+                             height="512px" class="svg-icon"><g><g> <g> <g> <path
+                                                d="M451.125,222.708L250.292,21.875C236.396,7.979,217.167,0,197.5,0H42.667C19.146,0,0,19.135,0,42.667V197.49     c0,19.938,7.771,38.688,21.875,52.802l200.833,200.833c11.75,11.74,27.375,18.208,43.958,18.208s32.208-6.469,43.958-18.208     l140.5-140.5c11.75-11.729,18.208-27.344,18.208-43.958S462.875,234.437,451.125,222.708z M436.042,295.542l-140.5,140.5     c-15.458,15.417-42.292,15.417-57.75,0L36.958,235.208c-10.083-10.083-15.625-23.479-15.625-37.719V42.667     c0-11.76,9.563-21.333,21.333-21.333H197.5c14.042,0,27.792,5.698,37.708,15.625l200.833,200.833     C443.75,245.5,448,255.75,448,266.667C448,277.583,443.75,287.833,436.042,295.542z"
+                                                data-original="#000000" class="active-path" data-old_color="#000000" fill="#4ABA48"></path>
+                                            <path d="M251.271,266.354c2.083,2.083,4.812,3.125,7.542,3.125c2.729,0,5.458-1.042,7.542-3.125     c4.167-4.167,4.167-10.917,0-15.083l-15.087-15.087l15.087-15.09l22.625,22.635c4.167,4.167,10.917,4.167,15.083,0     c4.167-4.167,4.167-10.917,0-15.083l-30.167-30.177c-2-2-4.708-3.125-7.542-3.125s-5.542,1.125-7.542,3.125l-60.333,60.344     c-4.167,4.167-4.167,10.917,0,15.083l30.167,30.167c2.083,2.083,4.813,3.125,7.542,3.125c2.729,0,5.458-1.042,7.542-3.125     c4.167-4.167,4.167-10.917,0-15.083l-22.625-22.625l15.082-15.085L251.271,266.354z"
+                                                  data-original="#000000" class="active-path" data-old_color="#000000" fill="#4ABA48"></path>
+                                            <path d="M334.229,258.812c-4.167-4.167-10.917-4.167-15.083,0l-60.333,60.333c-4.167,4.167-4.167,10.917,0,15.083l30.167,30.177     c2.083,2.083,4.813,3.125,7.542,3.125c2.729,0,5.458-1.042,7.542-3.125c4.167-4.167,4.167-10.917,0-15.083l-22.625-22.635     l15.083-15.083l15.083,15.083c2.083,2.083,4.813,3.125,7.542,3.125s5.458-1.042,7.542-3.125c4.167-4.167,4.167-10.917,0-15.083     l-15.083-15.083l15.083-15.083l22.625,22.625c4.167,4.167,10.917,4.167,15.083,0c4.167-4.167,4.167-10.917,0-15.083     L334.229,258.812z"
+                                                  data-original="#000000" class="active-path" data-old_color="#000000" fill="#4ABA48"></path>
+                                            <path d="M145.667,145.677c4.167-4.167,4.167-10.917,0-15.083l-15.083-15.091l15.083-15.086l22.625,22.625     c4.167,4.167,10.917,4.167,15.083,0c4.167-4.167,4.167-10.917,0-15.083l-30.167-30.167c-4-4-11.083-4-15.083,0l-30.151,30.156     c0,0-0.01,0.005-0.016,0.01c-0.005,0.005-0.005,0.01-0.005,0.01l-30.161,30.167c-4.167,4.167-4.167,10.917,0,15.083     c2.083,2.083,4.813,3.125,7.542,3.125c2.729,0,5.458-1.042,7.542-3.125l22.626-22.63l15.082,15.089     c2.083,2.083,4.813,3.125,7.542,3.125C140.854,148.802,143.583,147.76,145.667,145.677z"
+                                                  data-original="#000000" class="active-path" data-old_color="#000000" fill="#4ABA48"></path>
+                                            <path d="M207.771,207.792c7.896-0.417,15.25-3.698,20.875-9.323c12.479-12.479,12.479-32.771,0-45.25l-15.083-15.083     c-4.167-4.167-10.917-4.167-15.083,0l-29.896,29.885c-0.104,0.094-0.208,0.188-0.292,0.281c-0.104,0.094-0.188,0.188-0.271,0.292     l-29.896,29.875c-4.167,4.167-4.167,10.917,0,15.083c4.167,4.167,10.917,4.167,15.083,0l22.625-22.625l7.563,7.531     c4.146,4.167,4.146,10.938,0,15.094l-15.104,15.094c-4.167,4.156-4.167,10.917,0,15.083c2.083,2.083,4.813,3.125,7.542,3.125     c2.729,0,5.458-1.042,7.542-3.125l15.104-15.094C204.25,222.854,207.354,215.385,207.771,207.792z M206.021,160.76l7.542,7.542     c4.167,4.156,4.167,10.927,0,15.083c-2.021,2.01-4.688,3.125-7.542,3.125H206c-2.833,0-5.5-1.104-7.521-3.135l-7.542-7.531     L206.021,160.76z"
+                                                  data-original="#000000" class="active-path" data-old_color="#000000"
+                                                  fill="#4ABA48"></path> </g> </g> </g></g> </svg>
+                    </x-slot>
+                </x-service-item>
+                <x-service-item title="Cập nhật liên tục">
+                    <x-slot name="desc">
+                        Các sản phẩm <b>vay online</b> được cập nhật liên tục mỗi giờ bao gồm cả các khuyến mãi dành cho người lần đầu vay, hay lãi suất trả góp 0%....
+                    </x-slot>
+                    <x-slot name="image">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                             id="Layer_1" x="0px" y="0px" viewBox="0 0 469.333 469.333"
+                             style="enable-background:new 0 0 469.333 469.333;" xml:space="preserve" width="512px"
+                             height="512px" class="svg-icon"><g><g> <g> <g> <path
+                                                d="M451.125,222.708L250.292,21.875C236.396,7.979,217.167,0,197.5,0H42.667C19.146,0,0,19.135,0,42.667V197.49     c0,19.938,7.771,38.688,21.875,52.802l200.833,200.833c11.75,11.74,27.375,18.208,43.958,18.208s32.208-6.469,43.958-18.208     l140.5-140.5c11.75-11.729,18.208-27.344,18.208-43.958S462.875,234.437,451.125,222.708z M436.042,295.542l-140.5,140.5     c-15.458,15.417-42.292,15.417-57.75,0L36.958,235.208c-10.083-10.083-15.625-23.479-15.625-37.719V42.667     c0-11.76,9.563-21.333,21.333-21.333H197.5c14.042,0,27.792,5.698,37.708,15.625l200.833,200.833     C443.75,245.5,448,255.75,448,266.667C448,277.583,443.75,287.833,436.042,295.542z"
+                                                data-original="#000000" class="active-path" data-old_color="#000000" fill="#4ABA48"></path>
+                                            <path d="M251.271,266.354c2.083,2.083,4.812,3.125,7.542,3.125c2.729,0,5.458-1.042,7.542-3.125     c4.167-4.167,4.167-10.917,0-15.083l-15.087-15.087l15.087-15.09l22.625,22.635c4.167,4.167,10.917,4.167,15.083,0     c4.167-4.167,4.167-10.917,0-15.083l-30.167-30.177c-2-2-4.708-3.125-7.542-3.125s-5.542,1.125-7.542,3.125l-60.333,60.344     c-4.167,4.167-4.167,10.917,0,15.083l30.167,30.167c2.083,2.083,4.813,3.125,7.542,3.125c2.729,0,5.458-1.042,7.542-3.125     c4.167-4.167,4.167-10.917,0-15.083l-22.625-22.625l15.082-15.085L251.271,266.354z"
+                                                  data-original="#000000" class="active-path" data-old_color="#000000" fill="#4ABA48"></path>
+                                            <path d="M334.229,258.812c-4.167-4.167-10.917-4.167-15.083,0l-60.333,60.333c-4.167,4.167-4.167,10.917,0,15.083l30.167,30.177     c2.083,2.083,4.813,3.125,7.542,3.125c2.729,0,5.458-1.042,7.542-3.125c4.167-4.167,4.167-10.917,0-15.083l-22.625-22.635     l15.083-15.083l15.083,15.083c2.083,2.083,4.813,3.125,7.542,3.125s5.458-1.042,7.542-3.125c4.167-4.167,4.167-10.917,0-15.083     l-15.083-15.083l15.083-15.083l22.625,22.625c4.167,4.167,10.917,4.167,15.083,0c4.167-4.167,4.167-10.917,0-15.083     L334.229,258.812z"
+                                                  data-original="#000000" class="active-path" data-old_color="#000000" fill="#4ABA48"></path>
+                                            <path d="M145.667,145.677c4.167-4.167,4.167-10.917,0-15.083l-15.083-15.091l15.083-15.086l22.625,22.625     c4.167,4.167,10.917,4.167,15.083,0c4.167-4.167,4.167-10.917,0-15.083l-30.167-30.167c-4-4-11.083-4-15.083,0l-30.151,30.156     c0,0-0.01,0.005-0.016,0.01c-0.005,0.005-0.005,0.01-0.005,0.01l-30.161,30.167c-4.167,4.167-4.167,10.917,0,15.083     c2.083,2.083,4.813,3.125,7.542,3.125c2.729,0,5.458-1.042,7.542-3.125l22.626-22.63l15.082,15.089     c2.083,2.083,4.813,3.125,7.542,3.125C140.854,148.802,143.583,147.76,145.667,145.677z"
+                                                  data-original="#000000" class="active-path" data-old_color="#000000" fill="#4ABA48"></path>
+                                            <path d="M207.771,207.792c7.896-0.417,15.25-3.698,20.875-9.323c12.479-12.479,12.479-32.771,0-45.25l-15.083-15.083     c-4.167-4.167-10.917-4.167-15.083,0l-29.896,29.885c-0.104,0.094-0.208,0.188-0.292,0.281c-0.104,0.094-0.188,0.188-0.271,0.292     l-29.896,29.875c-4.167,4.167-4.167,10.917,0,15.083c4.167,4.167,10.917,4.167,15.083,0l22.625-22.625l7.563,7.531     c4.146,4.167,4.146,10.938,0,15.094l-15.104,15.094c-4.167,4.156-4.167,10.917,0,15.083c2.083,2.083,4.813,3.125,7.542,3.125     c2.729,0,5.458-1.042,7.542-3.125l15.104-15.094C204.25,222.854,207.354,215.385,207.771,207.792z M206.021,160.76l7.542,7.542     c4.167,4.156,4.167,10.927,0,15.083c-2.021,2.01-4.688,3.125-7.542,3.125H206c-2.833,0-5.5-1.104-7.521-3.135l-7.542-7.531     L206.021,160.76z"
+                                                  data-original="#000000" class="active-path" data-old_color="#000000"
+                                                  fill="#4ABA48"></path> </g> </g> </g></g> </svg>
+                    </x-slot>
+                </x-service-item>
+                <x-service-item title="Chuyên nghiệp tuyệt đối">
+                    <x-slot name="desc">
+                        Đội ngũ tư vấn viên nhiệt tình, nhiều kinh nghiệm và có trách nhiệm, luôn luôn túc trực 24/7 để giải đáp các thắc mắc trong quá trình tìm thông tin về gói vay hay đăng kí vay online của khách hàng. Sự chuyên nghiệp của <b>Vay tiền online 123</b> chưa bao giờ làm khách hàng thất vọng
+                    </x-slot>
+                    <x-slot name="image">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                             id="Layer_1" x="0px" y="0px" viewBox="0 0 469.333 469.333"
+                             style="enable-background:new 0 0 469.333 469.333;" xml:space="preserve" width="512px"
+                             height="512px" class="svg-icon"><g><g> <g> <g> <path
+                                                d="M451.125,222.708L250.292,21.875C236.396,7.979,217.167,0,197.5,0H42.667C19.146,0,0,19.135,0,42.667V197.49     c0,19.938,7.771,38.688,21.875,52.802l200.833,200.833c11.75,11.74,27.375,18.208,43.958,18.208s32.208-6.469,43.958-18.208     l140.5-140.5c11.75-11.729,18.208-27.344,18.208-43.958S462.875,234.437,451.125,222.708z M436.042,295.542l-140.5,140.5     c-15.458,15.417-42.292,15.417-57.75,0L36.958,235.208c-10.083-10.083-15.625-23.479-15.625-37.719V42.667     c0-11.76,9.563-21.333,21.333-21.333H197.5c14.042,0,27.792,5.698,37.708,15.625l200.833,200.833     C443.75,245.5,448,255.75,448,266.667C448,277.583,443.75,287.833,436.042,295.542z"
+                                                data-original="#000000" class="active-path" data-old_color="#000000" fill="#4ABA48"></path>
+                                            <path d="M251.271,266.354c2.083,2.083,4.812,3.125,7.542,3.125c2.729,0,5.458-1.042,7.542-3.125     c4.167-4.167,4.167-10.917,0-15.083l-15.087-15.087l15.087-15.09l22.625,22.635c4.167,4.167,10.917,4.167,15.083,0     c4.167-4.167,4.167-10.917,0-15.083l-30.167-30.177c-2-2-4.708-3.125-7.542-3.125s-5.542,1.125-7.542,3.125l-60.333,60.344     c-4.167,4.167-4.167,10.917,0,15.083l30.167,30.167c2.083,2.083,4.813,3.125,7.542,3.125c2.729,0,5.458-1.042,7.542-3.125     c4.167-4.167,4.167-10.917,0-15.083l-22.625-22.625l15.082-15.085L251.271,266.354z"
+                                                  data-original="#000000" class="active-path" data-old_color="#000000" fill="#4ABA48"></path>
+                                            <path d="M334.229,258.812c-4.167-4.167-10.917-4.167-15.083,0l-60.333,60.333c-4.167,4.167-4.167,10.917,0,15.083l30.167,30.177     c2.083,2.083,4.813,3.125,7.542,3.125c2.729,0,5.458-1.042,7.542-3.125c4.167-4.167,4.167-10.917,0-15.083l-22.625-22.635     l15.083-15.083l15.083,15.083c2.083,2.083,4.813,3.125,7.542,3.125s5.458-1.042,7.542-3.125c4.167-4.167,4.167-10.917,0-15.083     l-15.083-15.083l15.083-15.083l22.625,22.625c4.167,4.167,10.917,4.167,15.083,0c4.167-4.167,4.167-10.917,0-15.083     L334.229,258.812z"
+                                                  data-original="#000000" class="active-path" data-old_color="#000000" fill="#4ABA48"></path>
+                                            <path d="M145.667,145.677c4.167-4.167,4.167-10.917,0-15.083l-15.083-15.091l15.083-15.086l22.625,22.625     c4.167,4.167,10.917,4.167,15.083,0c4.167-4.167,4.167-10.917,0-15.083l-30.167-30.167c-4-4-11.083-4-15.083,0l-30.151,30.156     c0,0-0.01,0.005-0.016,0.01c-0.005,0.005-0.005,0.01-0.005,0.01l-30.161,30.167c-4.167,4.167-4.167,10.917,0,15.083     c2.083,2.083,4.813,3.125,7.542,3.125c2.729,0,5.458-1.042,7.542-3.125l22.626-22.63l15.082,15.089     c2.083,2.083,4.813,3.125,7.542,3.125C140.854,148.802,143.583,147.76,145.667,145.677z"
+                                                  data-original="#000000" class="active-path" data-old_color="#000000" fill="#4ABA48"></path>
+                                            <path d="M207.771,207.792c7.896-0.417,15.25-3.698,20.875-9.323c12.479-12.479,12.479-32.771,0-45.25l-15.083-15.083     c-4.167-4.167-10.917-4.167-15.083,0l-29.896,29.885c-0.104,0.094-0.208,0.188-0.292,0.281c-0.104,0.094-0.188,0.188-0.271,0.292     l-29.896,29.875c-4.167,4.167-4.167,10.917,0,15.083c4.167,4.167,10.917,4.167,15.083,0l22.625-22.625l7.563,7.531     c4.146,4.167,4.146,10.938,0,15.094l-15.104,15.094c-4.167,4.156-4.167,10.917,0,15.083c2.083,2.083,4.813,3.125,7.542,3.125     c2.729,0,5.458-1.042,7.542-3.125l15.104-15.094C204.25,222.854,207.354,215.385,207.771,207.792z M206.021,160.76l7.542,7.542     c4.167,4.156,4.167,10.927,0,15.083c-2.021,2.01-4.688,3.125-7.542,3.125H206c-2.833,0-5.5-1.104-7.521-3.135l-7.542-7.531     L206.021,160.76z"
+                                                  data-original="#000000" class="active-path" data-old_color="#000000"
+                                                  fill="#4ABA48"></path> </g> </g> </g></g> </svg>
+                    </x-slot>
+                </x-service-item>
+            </div>
         </div>
     </x-block>
     <!-- comment -->
@@ -319,13 +321,13 @@
     <!-- posts -->
 
     <!-- comment -->
-    <x-block class="light-blue">
+    <x-block class="light-blue hidden sm:block">
         <x-slot name="title">
             Khách hàng nói gì về vay tiền online
         </x-slot>
         <div class="comment-slide mt-8 overflow-hidden">
             <div class="swiper-wrapper">
-                <div class="swiper-slide flex gap-4">
+                <div class="swiper-slide flex flex-col md:flex-row gap-4">
                     <div class="flex-1 flex">
                         <img src="assets/avatar.jpg" style="width: 150px; height: 150px;" class="rounded-full" alt="">
                         <div class="pl-3">
@@ -363,7 +365,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide flex gap-4">
+                <div class="swiper-slide flex flex-col md:flex-row gap-4">
                     <div class="flex-1 flex">
                         <img src="assets/avatar.jpg" style="width: 150px; height: 150px;" class="rounded-full" alt="">
                         <div class="pl-2">

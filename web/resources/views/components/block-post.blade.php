@@ -1,4 +1,4 @@
-<div class="mt-5 flex gap-10">
+<div class="mt-5 flex flex-col md:flex-row gap-10">
     @if($posts->count())
         @php
             $firstPost = $posts->first();

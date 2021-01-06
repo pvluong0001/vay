@@ -1,4 +1,4 @@
-<div class="flex-1 flex flex-col items-center">
+<div class="flex flex-col items-center {{ $class }}">
     <x-svg-icon>
         {{ $image }}
     </x-svg-icon>

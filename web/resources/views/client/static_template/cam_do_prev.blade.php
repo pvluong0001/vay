@@ -12,7 +12,7 @@
 
 <div data-type="anchor" data-label="Các tài sản chấp nhận cầm cố">
     <x-block title="Các tài sản chấp nhận cầm cố">
-        <div class="grid grid-cols-6 gap-6">
+        <div class="grid sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
             <div class="bg-gray-100 p-3 flex flex-col gap-3 items-center">
                 <img src="assets/xe-may.png" class="img-icon" alt="">
                 <span>Xe máy</span>
@@ -59,7 +59,7 @@
 
 <div data-type="anchor" data-label="Quy trình cầm đồ online">
     <x-block class="light-blue" title="Quy trình cầm đồ online">
-        <div class="grid grid-cols-4 gap-5 mt-16">
+        <div class="grid md:grid-cols-4 gap-5 mt-16">
             <x-service-item title="CMDD/ Thẻ CCCD" desc="Có CMND/ Thẻ CCCD dưới 15 năm, không rách nát, mờ số">
                 <x-slot name="image">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"

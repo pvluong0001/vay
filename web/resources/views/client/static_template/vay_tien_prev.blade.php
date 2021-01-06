@@ -1,6 +1,6 @@
 <div class="light-blue">
     <div class="container p-10">
-        <div class="flex p-5 justify-center gap-10" data-ref="anchor"></div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 p-5 justify-center gap-5 md:gap-10" data-ref="anchor"></div>
 
         <p class="text-2xl font-bold">Vay tiền <span class="text-red-700">nhanh</span> online chỉ với CMND - Nhận tiền ngay trong ngày</p>
         <div class="h-72 mt-5 overflow-auto">

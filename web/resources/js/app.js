@@ -1,13 +1,58 @@
 // import Swiper JS
 import Swiper, {Pagination} from 'swiper';
+import 'swiper/swiper-bundle.css';
+
 require('./modal');
 require('./tab');
 require('./faq');
 require('./menu');
+const slides = [];
+
+const MD_SIZE = 768;
 
 Swiper.use([Pagination]);
 // import Swiper styles
-import 'swiper/swiper-bundle.css';
+/** check screen and check slideable element */
+(() => {
+    const initSlideable = () => {
+        const slideableElements = document.querySelectorAll('[data-type="slideable"]');
+
+        Array.from(slideableElements).forEach((element, index) => {
+            const className = `swiper-slideable-${index}`
+            element.classList.add(className);
+            element.firstElementChild.classList.add('swiper-wrapper')
+            Array.from(element.firstElementChild.children).forEach(child => {
+                child.classList.add('swiper-slide')
+            })
+
+            slides.push(new Swiper(`.${className}`));
+        })
+    }
+
+    if (document.body.clientWidth < MD_SIZE) {
+        initSlideable();
+    }
+
+    // check when resize
+    // window.addEventListener("resize", function (event) {
+    //     console.log(document.body.clientWidth)
+    //     if (document.body.clientWidth < MD_SIZE) {
+    //         if (slides.length === 0) {
+    //             initSlideable();
+    //         }
+    //     } else {
+    //         if (slides.length) {
+    //             slides.forEach(slide => {
+    //                 slide.$wrapperEl.removeAttr('style');
+    //                 slide.$el.removeAttr('style');
+    //                 slide.destroy();
+    //             })
+    //             slides.length = 0;
+    //         }
+    //     }
+    // })
+})();
+
 
 new Swiper('.swiper-container');
 new Swiper('.branch-slide', {
@@ -22,8 +67,16 @@ new Swiper('.comment-slide', {
     }
 });
 new Swiper('.knowledge-slide', {
-    slidesPerView: 4,
+    slidesPerView: 1,
     spaceBetween: 25,
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+        },
+        1024: {
+            slidesPerView: 4,
+        }
+    },
     pagination: {
         el: '.swiper-pagination',
     },
@@ -31,7 +84,7 @@ new Swiper('.knowledge-slide', {
 
 // autoload basic slide
 window.loadSlide = (className, options = {}) => {
-    if(document.querySelector(className)) {
+    if (document.querySelector(className)) {
         new Swiper(className, options)
     }
 }

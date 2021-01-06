@@ -20,7 +20,7 @@
     <x-block class="my-job py-20 bg-fixed bg-center bg-cover relative text-lg"
         title="Chúng tôi làm gì?" subtitle="Kết nối khách hàng với hàng nghìn chuyên gia, nhân viên tư vấn của các ngân hàng và công ty tài chính trên toàn quốc."
     >
-        <div class="grid grid-cols-2 gap-10 px-5 pt-10">
+        <div class="grid md:grid-cols-2 gap-10 px-5 pt-10">
             <div>
                 <div class="main-button uppercase text-center">
                     Đối với khách hàng
@@ -44,23 +44,22 @@
     </x-block>
 
     <x-block title="Đối tác" subtitle="Đối tác chiến lược của chúng tôi">
-        <div class="grid grid-cols-5 gap-10 mt-5">
-            <img src="assets/hsbc.jpg" alt="">
-            <img src="assets/hsbc.jpg" alt="">
-            <img src="assets/hsbc.jpg" alt="">
-            <img src="assets/hsbc.jpg" alt="">
-            <img src="assets/hsbc.jpg" alt="">
-            <img src="assets/hsbc.jpg" alt="">
-            <img src="assets/hsbc.jpg" alt="">
-            <img src="assets/hsbc.jpg" alt="">
-            <img src="assets/hsbc.jpg" alt="">
-            <img src="assets/hsbc.jpg" alt="">
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-10 mt-5">
+            <div><img class="mx-auto" src="assets/hsbc.jpg" alt=""></div>
+            <div><img class="mx-auto" src="assets/hsbc.jpg" alt=""></div>
+            <div><img class="mx-auto" src="assets/hsbc.jpg" alt=""></div>
+            <div><img class="mx-auto" src="assets/hsbc.jpg" alt=""></div>
+            <div><img class="mx-auto" src="assets/hsbc.jpg" alt=""></div>
+            <div><img class="mx-auto" src="assets/hsbc.jpg" alt=""></div>
+            <div><img class="mx-auto" src="assets/hsbc.jpg" alt=""></div>
+            <div><img class="mx-auto" src="assets/hsbc.jpg" alt=""></div>
+            <div><img class="mx-auto" src="assets/hsbc.jpg" alt=""></div>
         </div>
     </x-block>
 
     <x-block title="Liên hệ với chúng tôi">
-        <div class="grid grid-cols-7 gap-5">
-            <div class="col-start-1 col-end-4">
+        <div class="grid sm:grid-cols-7 gap-5">
+            <div class="col-start-0 col-end-1 sm:col-start-1 sm:col-end-4">
                 <h4 class="text-3xl font-bold">Vay tiền online 123</h4>
                 <div class="flex flex-col gap-4 mt-7">
                     <p><i class="fas fa-envelope"></i> test@test.com</p>
@@ -68,7 +67,7 @@
                     <p><i class="fas fa-map-marker-alt"></i> HaNoi</p>
                 </div>
             </div>
-            <div class="col-start-4 col-end-8">
+            <div class="col-start-0 col-end-1 sm:col-start-4 sm:col-end-8">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d979.863625489701!2d106.7003471686291!3d10.77645961942021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175293393f7645d%3A0x86f5fb6ccec7b12a!2sVay%20Ti%E1%BB%81n%20Online!5e0!3m2!1sen!2s!4v1586685709657!5m2!1sen!2s" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
         </div>
@@ -177,8 +176,13 @@
 @push('after_scripts')
     <script>
         loadSlide('.basic-slide', {
-            slidesPerView: 3,
-            spaceBetween: 25
+            slidesPerView: 1,
+            spaceBetween: 25,
+            breakpoints: {
+                768: {
+                    slidesPerView: 3,
+                }
+            },
         })
     </script>
 @endpush
